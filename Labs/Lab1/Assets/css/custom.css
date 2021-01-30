@@ -209,8 +209,58 @@ h1, h2, h3, h4, h5, h6 {
 	/*font-family: cocaColaFont;*/
 }
 
+/* CSS rule to style the footer */
+.footer {
+    color: #030303;
+    background-color: #760003; /* Set navbar footer background color same as header */
+    height: 50px;
+}
+
+.navbar-text > a {
+    font-size: 10px;
+}
+
+.navbar-text > p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright {
+    padding-top: 8px;
+}
+
+.social {
+    padding-top: 0px;
+    
+}
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {  
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #257600;
+        height: 60px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+}
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { }
@@ -220,3 +270,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  }
+
+/* you can prepare image for 290, 400, 538, 768, 970 and 1400 */
+/* So it looks great on all device sizes. */

@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <!-- Installing font awesome fonts locally allows css use to change them rather than inline see bottom-->        
     <script src="https://kit.fontawesome.com/bf126aad1a.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -19,7 +22,7 @@
 
 <body>
     <!-- Nav Bar-->
-    <nav class="navbar navbar-expand-sm navbar_coca_cola">
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola">
         <div class="container">
             <!-- Brand -->
             <div class="logo">
@@ -153,11 +156,11 @@
             <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>&copy 2021 Web 3D Applications</p>
             </div>
-            <div class="navbar-text float-left copyright">
-                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-                <a href="#"><i class="fab fa-github-square fa-2x"></i></a>
+            <div class="navbar-text float-left social">
+                <a href="#"><i class="fab fa-facebook-square fa-2x" style="font-size: 20px;color: crimson;"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x" style="font-size: 20px;color: darkgreen;"></i></a>
+                <a href="#"><i class="fab fa-google-plus fa-2x" style="font-size: 20px;color: darkturquoise;"></i></a>
+                <a href="#"><i class="fab fa-github-square fa-2x" style="font-size: 20px;color: gold;"></i></a>
             </div>
         </div>
     </nav>
@@ -175,3 +178,51 @@
 </body>
 
 </html>
+
+<!-- Code for font awsome font customization
+HTML5:
+     Your 3D App footer 
+    <nav class="navbar navbar-expand-sm footer">
+        <div class="container">   
+            <div class="navbar-text float-left copyright">
+                <p><span class="align-baseline"></span>&copy 2020 Mobile Web 3D Applications </span></p>
+            </div>
+            <div class="navbar-text social">
+                  <a href="#"><i class="fab fa-github-square fa-2x fa-pull-right"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-square fa-2x fa-pull-right"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square fa-2x fa-pull-right"></i></a>
+                  <a href="#"><i class="fab fa-facebook-square fa-2x fa-pull-right"></i></a>
+            </div>
+        </div>
+    </nav> 
+CSS:
+    .social {
+        padding-top: 0px;
+        width: 30%;   
+    }
+
+    .fa-twitter-square:before {
+        content: "\f081";
+        color: green;
+        font-size: 1em;
+    }
+
+    .fa-github-square:before {
+        content: "\f092"; 
+        color: yellow;
+        font-size: 1em;
+    }
+
+    .fa-google-plus-square:before {
+        content: "\f0d4"; 
+        color: blue;
+        font-size: 1em;
+    }
+
+    fa-facebook-square:before {
+        content: "\f082";
+        color: red;
+        font-size: 1em; 
+    }
+
+-->
