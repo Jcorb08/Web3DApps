@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- X3dom -->
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/x3dom/release/x3dom.css'></link>
+    <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
 
     <!-- Installing font awesome fonts locally allows css use to change them rather than inline see bottom-->        
     <script src="https://kit.fontawesome.com/bf126aad1a.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="Assets/css/x3d.css">
     <link rel="stylesheet" href="Assets/css/custom.css">
 
     <title>Hello, world!</title>
@@ -47,7 +51,8 @@
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
+                        title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module ...">About</a>
                     </li>
 
                     <!-- Dropdown -->
@@ -91,12 +96,18 @@
                         </ul>
                     </div>
 
-                    <!--X3D CODE GOES HERE-->
-                    <!-- IMG TEMP-->
-                    <div id="main_3d_image"></div>
-
                     <div class="card-body">
                         <h4 class="card-title">Coca Cola X3D Model</h4>
+                        <!--X3D CODE GOES HERE-->
+                        <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
+                        <div class="model3D">
+                            <x3d>
+                                <scene>
+                                    <inline url="Assets/x3d/coke.x3d"> </inline>
+                                </scene>
+                            </x3d>
+                        </div>
+                    
                         <p class="card-text">This X3D model of the coke has been created in Blender, 
                             exported to X3D and then translated to X3DOM fro display online</p>
                         <h5 class="card-subtitle">Camera Views</h5>
@@ -184,6 +195,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="Assets/js/custom.js"></script>
 </body>
 
 </html>
