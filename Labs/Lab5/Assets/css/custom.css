@@ -336,6 +336,16 @@ h1, h2, h3, h4, h5, h6 {
         height: auto;
     }
 
+    .gallery .img-thumbnail{
+        background-color: darkgray;
+        padding: 0.25rem;
+        margin: 5px;
+        border: 1px solid #257600;
+        border-radius: 0.25rem;
+        max-width: 43%;
+        height: auto;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up) */

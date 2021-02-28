@@ -10,11 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- X3dom -->
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/x3dom/release/x3dom.css'></link>
+    <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
 
     <!-- Installing font awesome fonts locally allows css use to change them rather than inline see bottom-->        
     <script src="https://kit.fontawesome.com/bf126aad1a.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="Assets/css/x3d.css">
     <link rel="stylesheet" href="Assets/css/custom.css">
 
     <title>Hello, world!</title>
@@ -228,24 +232,16 @@
                 </div>
             </div>
 
-            <!--3d image gallery-->
-            <div class="col-sm-2">
-                <div class="card text-left">
-                    <div class="card-header">
-                        3D Image gallery
-                    </div>
-                    <a href="javascript:swap('coke');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/coca_cola.jpg" alt="Coca Cola">
-                    </a>
-                    <a href="javascript:swap('sprite');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/sprite.jpg" alt="Coca Cola">
-                    </a>
-                    <a href="javascript:swap('pepper');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/dr_pepper.jpg" alt="Coca Cola">
-                    </a>
-                    <p class="card-text">3D images rendered in Blender 2.9</p>
+           <!--3d image gallery-->
+           <div class="col-sm-2">
+            <div class="card text-left">
+                <div class="card-header gallery-header">
+                    3D Image gallery
                 </div>
+                <div class="gallery" id="gallery_coke"></div>
+                <p class="card-text">3D images rendered in Blender 2.9</p>
             </div>
+        </div>
         </div>
 
         <div class="row">
@@ -325,18 +321,10 @@
             <!--3d image gallery-->
             <div class="col-sm-2">
                 <div class="card text-left">
-                    <div class="card-header">
+                    <div class="card-header gallery-header">
                         3D Image gallery
                     </div>
-                    <a href="javascript:swap('coke');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/coca_cola.jpg" alt="Coca Cola">
-                    </a>
-                    <a href="javascript:swap('sprite');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/sprite.jpg" alt="Coca Cola">
-                    </a>
-                    <a href="javascript:swap('pepper');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/dr_pepper.jpg" alt="Coca Cola">
-                    </a>
+                    <div class="gallery" id="gallery_sprite"></div>
                     <p class="card-text">3D images rendered in Blender 2.9</p>
                 </div>
             </div>
@@ -416,18 +404,10 @@
             <!--3d image gallery-->
             <div class="col-sm-2">
                 <div class="card text-left">
-                    <div class="card-header">
+                    <div class="card-header gallery-header">
                         3D Image gallery
                     </div>
-                    <a href="javascript:swap('coke');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/coca_cola.jpg" alt="Coca Cola">
-                    </a>
-                    <a href="javascript:swap('sprite');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/sprite.jpg" alt="Coca Cola">
-                    </a>
-                    <a href="javascript:swap('pepper');">
-                        <img class="card-img-top img-fluid img-thumbnail" src="Assets/images/dr_pepper.jpg" alt="Coca Cola">
-                    </a>
+                    <div class="gallery" id="gallery_pepper"></div>
                     <p class="card-text">3D images rendered in Blender 2.9</p>
                 </div>
             </div>
@@ -480,6 +460,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="Assets/js/custom.js"></script>
+    <script src="Assets/js/controller.js"></script>
 </body>
 
 </html>
