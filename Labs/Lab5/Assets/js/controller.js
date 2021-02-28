@@ -18,7 +18,7 @@ $(document).ready(function() {
       //response handler code
       //alert(xmlHttp.responseText);
       response = xmlHttp.responseText.split("~");
-      alert(response);
+      //alert(response);
       //loop response array
       for(var i=0;i<response.length;i++){
         htmlCode += '<a href="Assets/images/gallery' + response[i] + ' ">';
