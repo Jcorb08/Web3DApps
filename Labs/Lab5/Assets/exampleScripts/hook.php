@@ -16,6 +16,15 @@ while ($file = readdir($dir_handle)){
     // split each file name to extract the file extension
     $file_comps = explode('.', $file);
     // grab exts token
-    $ext = strtolower
+    $ext = strtolower(array_pop($file_comps));
+    // file = valid img if so add it
+    if (in_array($ext, $exts)){
+      // build response string using ~ symbol as string operator
+      $response .= $dir.'/'.$file.'~';
+    }
   }
 }
+closedir($dir_handle);
+// return response while removing the last ~ operator
+echo substr_replace($response,"",-1);
+?>
