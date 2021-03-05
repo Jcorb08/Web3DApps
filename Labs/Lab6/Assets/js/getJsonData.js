@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $.getJSON('../model/data.json', function(jsonObj){
+  $.getJSON('../Assets/model/data.json', function(jsonObj){
     // can see the object returned
     console.log(jsonObj);
     // get home page text
