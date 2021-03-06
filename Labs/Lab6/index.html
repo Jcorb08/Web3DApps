@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="Assets/css/x3d.css">
     <link rel="stylesheet" href="Assets/css/custom.css">
 
-    <title>Hello, world!</title>
+    <title>Lab 6</title>
 </head>
 
 <body>
@@ -48,52 +48,19 @@
                 <!-- ml-auto to left mr-auto to right mx-auto in center-->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="javascript:swap('home');">Home</a>
+                        <a class="nav-link active" href="">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
                         title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module ...">About</a>
                     </li>
-
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                            Drinks
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="javascript:swap('coke');">Coca Cola</a>
-                            <a class="dropdown-item" href="javascript:swap('sprite');">Sprite</a>
-                            <a class="dropdown-item" href="javascript:swap('pepper');">Dr Pepper</a>
-                        </div>
+                    <li class="nav-item">
+                        <a id="navModels" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
+                        title="About Web 3D Applications" data-content="X3d models for coke, sprite and dr.pepper">Models</a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
                     </li>
-
-                    <div class="modal" id="contactModal">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                          
-                            <!-- Modal Header -->
-                            <div class="modal-header">
-                              <h4 class="modal-title">3D App Contact Details</h4>
-                              <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            </div>
-                            
-                            <!-- Modal body -->
-                            <div class="modal-body">
-                              J Corbett Email: jc812 at sussex.ac.uk
-                            </div>
-                            
-                            <!-- Modal footer -->
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
                 </ul>
             </div>
         </div>
@@ -163,235 +130,6 @@
 
     </div>
 
-    <!-- Modal or Jumbotron to hold the 3D model??-->
-    <!-- Coke page block element-->
-    <div id="coke" class="container-fluid main_contents" style="display: none;">
-        <!-- Row to hold two cards the X3D model and the gallery-->
-        <div class="row">
-            <!--X3D model-->
-            <div class="col-sm-10">
-                <div class="card text-left">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:swap('coke');">Coke</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:swap('sprite');">Sprite</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:swap('pepper');">Pepper</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card-body">
-                        <div id="x3dtitle_coke" class="card-title"></div>
-                        <!--X3D CODE GOES HERE-->
-                        <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
-                        <div class="model3D">
-                            <x3d>
-                                <scene>
-                                    <inline url="Assets/x3d/coke.x3d"> </inline>
-                                </scene>
-                            </x3d>
-                        </div>
-                    
-                        <div id="x3dmethod_coke" class="card-text"></div>
-                        <div id="camtitle" class="card-subtitle"></div>
-                        <div class="camera-btns">
-                            <div id="camsubtitle" class="card-text"></div>
-                            <div class="btn-group ">
-                                <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
-                                <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
-                                <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
-                                <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
-                                <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
-                                <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-           <!--3d image gallery-->
-           <div class="col-sm-2">
-            <div class="card text-left">
-                <div id="gallerytitle" class="card-header gallery-header"></div>
-                <div class="gallery" id="gallery_coke"></div>
-                <div id="gallerytext" class="card-text"></div>
-            </div>
-        </div>
-        </div>
-
-        <div class="row">
-            <!-- Coke -->
-            <div class="col-xs-12 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div id="title_coke" class="card-title"></div>
-                        <div id="subtitle_coke" class="card-subtitle"></div>
-                        <div id="text_coke" class="card-text"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <!-- Sprite page block element-->
-    <div id="sprite" class="container-fluid main_contents" style="display: none;">
-        <!-- Row to hold two cards the X3D model and the gallery-->
-        <div class="row">
-            <!--X3D model-->
-            <div class="col-sm-10">
-                <div class="card text-left">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:swap('coke');">Coke</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:swap('sprite');">Sprite</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:swap('pepper');">Pepper</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card-body">
-                        <div id="x3dtitle_sprite" class="card-title"></div>
-                        <!--X3D CODE GOES HERE-->
-                        <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
-                        <div class="model3D">
-                            <x3d>
-                                <scene>
-                                    <inline url="Assets/x3d/sprite.x3d"> </inline>
-                                </scene>
-                            </x3d>
-                        </div>
-                    
-                        <div id="x3dmethod_sprite" class="card-text"></div>
-                        <div id="camtitle" class="card-subtitle"></div>
-                        <div class="camera-btns">
-                            <div id="camsubtitle" class="card-text"></div>
-                            <div class="btn-group ">
-                                <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
-                                <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
-                                <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
-                                <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
-                                <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
-                                <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--3d image gallery-->
-            <div class="col-sm-2">
-                <div class="card text-left">
-                    <div id="gallerytitle" class="card-header gallery-header"></div>
-                    <div class="gallery" id="gallery_sprite"></div>
-                    <div id="gallerytext" class="card-text"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <!--Sprite-->
-            <div class="col-xs-12 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div id="title_sprite" class="card-title"></div>
-                        <div id="subtitle_sprite" class="card-subtitle"></div>
-                        <div id="text_sprite" class="card-text"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    <!-- Pepper page block element-->
-    <div id="pepper" class="container-fluid main_contents" style="display: none;">
-        <!-- Row to hold two cards the X3D model and the gallery-->
-       <div class="row">
-            <!--X3D model-->
-            <div class="col-sm-10">
-                <div class="card text-left">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:swap('coke');">Coke</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:swap('sprite');">Sprite</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="javascript:swap('pepper');">Pepper</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="card-body">
-                        <div id="x3dtitle_pepper" class="card-title"></div>
-                        <!--X3D CODE GOES HERE-->
-                        <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
-                        <div class="model3D">
-                            <x3d>
-                                <scene>
-                                    <inline url="Assets/x3d/pepper.x3d"> </inline>
-                                </scene>
-                            </x3d>
-                        </div>
-                    
-                        <div id="x3dmethod_pepper" class="card-text"></div>
-                        <div id="camtitle" class="card-subtitle"></div>
-                        <div class="camera-btns">
-                            <div id="camsubtitle" class="card-text"></div>
-                            <div class="btn-group ">
-                                <a href="#" class="btn btn-primary btn-responsive camera-font">Front</a>
-                                <a href="#" class="btn btn-secondary btn-responsive camera-font">Back</a>
-                                <a href="#" class="btn btn-success btn-responsive camera-font">Left</a>
-                                <a href="#" class="btn btn-danger btn-responsive camera-font">Right</a>
-                                <a href="#" class="btn btn-warning btn-responsive camera-font">Top</a>
-                                <a href="#" class="btn btn-outline-dark disabled btn-responsive camera-font">Off</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-
-            <!--3d image gallery-->
-            <div class="col-sm-2">
-                <div class="card text-left">
-                    <div id="gallerytitle" class="card-header gallery-header"></div>
-                    <div class="gallery" id="gallery_pepper"></div>
-                    <div id="gallerytext" class="card-text"></div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!--Dr pepper-->
-                <div class="col-xs-12 col-sm-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div id="title_pepper" class="card-title"></div>
-                            <div id="subtitle_pepper" class="card-subtitle"></div>
-                            <div id="text_pepper" class="card-text"></div>
-                            <a href="#" class="btn btn-primary">Find out more ...</a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- footer-->
     <nav class="navbar navbar-expand-sm footer">
         <div class="container">
@@ -407,6 +145,31 @@
         </div>
     </nav>
 
+    <!--Modal here because backdrop messed up if in div container-->
+    <div class="modal fade" id="contactModal" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">3D App Contact Details</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              J Corbett Email: jc812 at sussex.ac.uk
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+
     <!-- Javascript jQuery, Popper, then Bootstrap JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -416,12 +179,13 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <!--popovers, swap function, custom scripts-->
+    <!--popovers, swap function, custom scripts
     <script src="Assets/js/custom.js"></script>
-    <!--gallery generator-->
+    <!--gallery generator
     <script src="Assets/js/controller.js"></script>
-    <!--JS model interactions-->
+    <!--JS model interactions
     <script src="Assets/js/getJsonData.js"></script>
+    -->
 </body>
 
 </html>

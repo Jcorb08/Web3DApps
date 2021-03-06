@@ -25,9 +25,7 @@ $(document).ready(function() {
         htmlCode += '<img class="card-img-top img-thumbnail" src="Assets/images/gallery' + response[i] + '"/>';
         htmlCode += '</a>';
       }
-      document.getElementById('gallery_coke').innerHTML = htmlCode;
-      document.getElementById('gallery_sprite').innerHTML = htmlCode;
-      document.getElementById('gallery_pepper').innerHTML = htmlCode;
+      document.getElementById('gallery').innerHTML = htmlCode;
     }
   }
 });

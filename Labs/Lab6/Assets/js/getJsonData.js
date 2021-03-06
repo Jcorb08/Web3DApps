@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+  $('[data-toggle="popover"]').popover(); 
+  
   $.getJSON("Assets/model/data.json", function(jsonObj){
     // can see the object returned
     console.log(jsonObj);
@@ -51,5 +52,6 @@ $(document).ready(function(){
     // cams
     $('#camtitle').html('<h2>' + jsonObj.pageTextData[8].camtitle + '</h2>');
     $('#camsubtitle').html('<h3>' + jsonObj.pageTextData[8].camsubtitle + '</h3>');
+
   });
 });
