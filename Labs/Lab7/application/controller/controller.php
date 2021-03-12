@@ -21,7 +21,7 @@ class Controller {
 		// Get data from the defined model method - model3D_info()
 		$data = $this->model->model3D_info();
 		// Tell the loader what view to load and which data to use
-		$this->load->view('view3DAppTest_2', $data);
+		$this->load->view('view3DAppTest', $data);
 	}
 }
 ?>
