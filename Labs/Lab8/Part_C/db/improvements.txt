@@ -1,0 +1,8 @@
+Some improvements
+It would be a good idea to think about creating more controller functions to manipulate the database based on typical CRUD (Create, Read, Update and Delete) functionalities.  For example, think about building controller functions for:
+    • Inserting a new field: (i.e. the remaining data elements in your Lab 6 view) as well as other properties
+    • Updating a field
+    • Getting a single value from a field
+    • Getting a single field
+    • Getting all fields of the same property, e.g. modelDescriptions.
+    • …
