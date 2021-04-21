@@ -19,8 +19,8 @@
     <script src="https://kit.fontawesome.com/bf126aad1a.js" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="Assets/css/x3d.css">
-    <link rel="stylesheet" href="Assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/x3d.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
     <title>3D Applications Assignment</title>
 </head>
@@ -86,7 +86,7 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid img-thumbnail" src="Assets/images/coca_cola.jpg"
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/coca_cola.jpg"
                             alt="Coca Cola">
                     </a>
                     <div class="card-body">
@@ -101,7 +101,7 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid img-thumbnail" src="Assets/images/sprite.jpg" alt="Sprite">
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
                     </a>
                     <div class="card-body">
                         <div id="title_centre"></div>
@@ -115,7 +115,7 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid img-thumbnail" src="Assets/images/dr_pepper.jpg"
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg"
                             alt="Dr Pepper">
                     </a>
                     <div class="card-body">
@@ -139,7 +139,7 @@
             </div>
             <div class="navbar-text float-left social">
                 <p><span class="align-baseline"></span>Github Archive ->
-                <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github-square fa-2x" style="font-size: 20px;color: gold;"></i></a>
+                <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github fa-3x" style="font-size: 20px;color: gold;"></i></a>
                 </p>
             </div>
         </div>
@@ -158,7 +158,7 @@
             
             <!-- Modal body -->
             <div class="modal-body">
-              J Corbett Email: jc812 at sussex.ac.uk
+              198735 Email: nobody@sussex.ac.uk
             </div>
             
             <!-- Modal footer -->
@@ -180,13 +180,13 @@
         crossorigin="anonymous"></script>
 
     <!--popovers, swap function, custom scripts-->
-    <script src="Assets/js/swap.js"></script>
+    <script src="assets/js/swap.js"></script>
     <!--gallery generator-->
-    <script src="Assets/js/gallery.js"></script>
+    <script src="assets/js/gallery.js"></script>
     <!--JS data getter-->
-    <script src="Assets/js/getJsonData.js"></script>
+    <script src="assets/js/getJsonData.js"></script>
     <!--Model animations-->
-    <script src="Assets/js/model.js"></script>
+    <script src="assets/js/model.js"></script>
 </body>
 
 </html>
