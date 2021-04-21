@@ -135,11 +135,10 @@
         <div class="container">
             <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>&copy 2021 Web 3D Applications</p>
-            
+            </div>
+            <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>Github Archive ->
-                <div class="navbar-text float-left social">
-                    <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
-                </div>
+                <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
                 </p>
             </div>
         </div>
