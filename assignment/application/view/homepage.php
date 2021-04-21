@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -35,8 +34,8 @@
                 <h1>1</h1>
                 <h1>oca</h1>
                 <h2>Cola</h2>
-                <h3>Journey</h3>
-                <p>Refreshing the world, one story at a time</p>
+                <h3>Cans</h3>
+                <p>Recycled Across the world into more cans</p>
                 </a>
             </div>
             <!--collapse navbar-->
@@ -136,10 +135,11 @@
         <div class="container">
             <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>&copy 2021 Web 3D Applications</p>
-            </div>
-            <div class="navbar-text float-left social">
+            
                 <p><span class="align-baseline"></span>Github Archive ->
-                <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github fa-3x" style="font-size: 20px;color: gold;"></i></a>
+                <div class="navbar-text float-left social">
+                    <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
+                </div>
                 </p>
             </div>
         </div>
