@@ -35,7 +35,7 @@
                 <h1>oca</h1>
                 <h2>Cola</h2>
                 <h3>Cans</h3>
-                <p>Recycled Across the world into more cans</p>
+                <p>Recycled across the world into more cans</p>
                 </a>
             </div>
             <!--collapse navbar-->

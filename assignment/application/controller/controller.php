@@ -1,3 +1,5 @@
+<?php
+/*
 Some improvements
 It would be a good idea to think about creating more controller functions to manipulate the database based on typical CRUD (Create, Read, Update and Delete) functionalities.  For example, think about building controller functions for:
     • Inserting a new field: (i.e. the remaining data elements in your Lab 6 view) as well as other properties
@@ -5,11 +7,7 @@ It would be a good idea to think about creating more controller functions to man
     • Getting a single value from a field
     • Getting a single field
     • Getting all fields of the same property, e.g. modelDescriptions.    • …
-
-<?php
-//include './debug/ChromePhp.php';
-//ChromePhp::log('controller.php: Hello World');
-//ChromePhp::log($_SERVER);	
+*/		
 
 // Create the controller class for the MVC design pattern
 class Controller {
@@ -30,7 +28,7 @@ class Controller {
 	function home()
 	{
 		// get text data for cards
-		//$data = $this->model->model3D_info();
+		$data = $this->model->homepage_info();
 		// load php file for homepage
 		$this->load->view('homepage');
 	}
