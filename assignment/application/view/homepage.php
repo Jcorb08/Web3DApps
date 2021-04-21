@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="Assets/css/x3d.css">
     <link rel="stylesheet" href="Assets/css/custom.css">
 
-    <title>Lab 6</title>
+    <title>3D Applications Assignment</title>
 </head>
 
 <body>
@@ -138,10 +138,8 @@
                 <p><span class="align-baseline"></span>&copy 2021 Web 3D Applications</p>
             </div>
             <div class="navbar-text float-left social">
-                <a href="#"><i class="fab fa-facebook-square fa-2x" style="font-size: 20px;color: crimson;"></i></a>
-                <a href="#"><i class="fab fa-twitter fa-2x" style="font-size: 20px;color: darkgreen;"></i></a>
-                <a href="#"><i class="fab fa-google-plus fa-2x" style="font-size: 20px;color: darkturquoise;"></i></a>
-                <a href="#"><i class="fab fa-github-square fa-2x" style="font-size: 20px;color: gold;"></i></a>
+                <p><span class="align-baseline"></span>Github Archive -></p>
+                <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github-square fa-2x" style="font-size: 20px;color: gold;"></i></a>
             </div>
         </div>
     </nav>
