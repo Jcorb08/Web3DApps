@@ -162,9 +162,9 @@ body {
 }
 
 #main_3d_image {
-    background-image: url(../images/big.jpg);
+    background-image: url(../images/main_3D.png);
     background-repeat: no-repeat;
-    height: 368px;
+    height: 1246px;
 }
 #main_text {
     float: left;
