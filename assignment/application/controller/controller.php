@@ -32,7 +32,7 @@ class Controller {
 		// get text data for cards
 		//$data = $this->model->model3D_info();
 		// load php file for homepage
-		$this->load->view('homepage', $data);
+		$this->load->view('homepage');
 	}
 
 	function apiCreateTable()
