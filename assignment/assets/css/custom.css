@@ -367,7 +367,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 992px) { }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {  
+    #main_3d_image {
+        background-image: url(../images/main_758.png);
+        background-repeat: no-repeat;
+        height: 522px;
+    }
+}
 
 /* you can prepare image for 290, 400, 538, 768, 970 and 1400 */
 /* So it looks great on all device sizes. */
