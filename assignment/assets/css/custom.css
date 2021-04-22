@@ -162,10 +162,9 @@ body {
 }
 
 #main_3d_image {
-    background-image: url(../images/main_3D.png);
+    background-image: url(../images/main_970.png);
     background-repeat: no-repeat;
-    height: 388px;
-    width: 758px;
+    height: 497px;
 }
 #main_text {
     float: left;
@@ -304,6 +303,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
+    #main_3d_image {
+        background-image: url(../images/main_538.png);
+        background-repeat: no-repeat;
+        height: 276px;
+    }
+
     /* CSS rule to style the footer */
     .footer {
         background-color: #257600;
@@ -350,7 +355,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    #main_3d_image {
+        background-image: url(../images/main_758.png);
+        background-repeat: no-repeat;
+        height: 388px;
+    }
+ }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { }
