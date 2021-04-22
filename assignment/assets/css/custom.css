@@ -162,9 +162,9 @@ body {
 }
 
 #main_3d_image {
-    background-image: url(../images/main_400.png);
+    background-image: url(../images/main_576.png);
     background-repeat: no-repeat;
-    height: 149px;
+    height: 215px;
 }
 #main_text {
     float: left;
@@ -304,9 +304,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
     #main_3d_image {
-        background-image: url(../images/main_576.png);
+        background-image: url(../images/main_768.png);
         background-repeat: no-repeat;
-        height: 215px;
+        height: 286px;
     }
 
     /* CSS rule to style the footer */
@@ -357,23 +357,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #main_3d_image {
-        background-image: url(../images/main_768.png);
+        background-image: url(../images/main_1000.png);
         background-repeat: no-repeat;
-        height: 286px;
+        height: 372px;
     }
  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-    #main_3d_image {
-        background-image: url(../images/main_1000.png);
-        background-repeat: no-repeat;
-        height: 372px;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
     #main_3d_image {
         background-image: url(../images/main_1400.png);
         background-repeat: no-repeat;
@@ -381,7 +372,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media (min-width: 1800px) {  
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {  
     #main_3d_image {
         background-image: url(../images/main_1920.png);
         background-repeat: no-repeat;
