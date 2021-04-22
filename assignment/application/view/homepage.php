@@ -82,7 +82,7 @@
         </div>
         <div class="row">
             <!-- Coke -->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/coca_cola.jpg"
@@ -97,7 +97,7 @@
                 </div>
             </div>
             <!--Sprite-->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <!--Dr pepper-->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/dr_pepper.jpg"
@@ -127,7 +127,7 @@
 
             </div>
             <!--Lilt-->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/lilt.png"
@@ -143,7 +143,7 @@
 
             </div>
             <!--Oasis-->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/oasis.jpg"
@@ -159,7 +159,7 @@
 
             </div>
             <!--Costa-->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/costa.png"
