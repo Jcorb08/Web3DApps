@@ -14,7 +14,7 @@ class Model {
 			// Change connection string for different databases, currently using SQLite
 			$this->dbhandle = new PDO($dsn);
 			$this->dbhandle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			echo 'Database connection created</br></br>';
+			echo 'Database connection created!';
 		}
 		catch (PDOEXception $e) {
 			echo "I can't connect to the database!";
@@ -23,21 +23,64 @@ class Model {
     	}
 	}
 	
-	/*
-	public function dbCreateTable()
+	//Creating the Table Home for the Homepage content
+	public function dbCreateHomeTable()
 	{
 		try {
-			$this->dbhandle->exec("CREATE TABLE Model_3D (Id INTEGER PRIMARY KEY, x3dModelTitle TEXT, x3dCreationMethod TEXT, modelTitle TEXT, modelSubtitle TEXT, modelDescription TEXT)");
-			return "Model_3D table is successfully created inside test1.db file";
+			$this->dbhandle->exec("CREATE TABLE Home (  ". 
+									"ID	INTEGER NOT NULL UNIQUE, " .
+									"Title	TEXT NOT NULL, " .
+									"Subtitle	TEXT NOT NULL, " .
+									"Text	TEXT NOT NULL, " . 
+									"PRIMARY KEY('ID' AUTOINCREMENT) );");
+			return "Home table is successfully created inside data.db file";
 		}
 		catch (PD0EXception $e){
 			print new Exception($e->getMessage());
 		}
 		$this->dbhandle = NULL;
 	}
-	*/
 
-	public function dbInsertData()
+	//Creating the Table Model for the Modelpage content
+	public function dbCreateModelTable()
+	{
+		try {
+			$this->dbhandle->exec("CREATE TABLE Models ( " .
+				"ID	INTEGER NOT NULL UNIQUE, " .
+				"Brand	TEXT NOT NULL, " .
+				"x3dTitle	TEXT NOT NULL, " .
+				"x3dMethod	TEXT NOT NULL, " . 
+				"modelTitle	TEXT NOT NULL, " . 
+				"modelSubTitle	TEXT NOT NULL, " . 
+				"modelText	TEXT NOT NULL, " . 
+				"PRIMARY KEY('ID' AUTOINCREMENT));");
+			return "Model table is successfully created inside data.db file";
+		}
+		catch (PD0EXception $e){
+			print new Exception($e->getMessage());
+		}
+		$this->dbhandle = NULL;
+	}
+
+	public function dbInsertHomeData()
+	{
+		try{
+			$this->dbhandle->exec(
+			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (1, 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (2, 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
+				VALUES (3, 'X3D Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
+			return "X3D model data inserted successfully inside test1.db";
+		}
+		catch(PD0EXception $e) {
+			print new Exception($e->getMessage());
+		}
+		$this->dbhandle = NULL;
+	}
+
+	public function dbInsertModelData()
 	{
 		try{
 			$this->dbhandle->exec(

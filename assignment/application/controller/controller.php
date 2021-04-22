@@ -33,6 +33,11 @@ class Controller {
 		$this->load->view('homepage');
 	}
 
+	function test()
+	{
+		$this->load->view('test');
+	}
+
 	function apiCreateTable()
 	{
 	  	// echo "Create table function";
@@ -65,28 +70,7 @@ class Controller {
 		echo "Data Read Function";
 	}
 
-  function apiGetFlickrService()
-	{
-		$this->load->view('viewFlickrService');
-	}
-
-	function apiGetJson()
-	{
-		$this->load->view('viewJson');
-	}
-
-	// API call to select 3D images
-	function apiLoadImage()
-	{
-	   // Get the brand data from the (this) Model using the dbGetBrand() meyhod in this Model class	
-	   //ChromePhp::warn('controller.php: [apiLoadImage] Get the Brand data');	
-	   $data = $this->model->dbGetBrand();
-	   // Note, the viewDrinks.php view being loaded here calls a new model
-	   // called modelDrinkDetails.php, which is not part of the Model class
-	   // It is a separate model illustrating that you can have many models
-	   //ChromePhp::log($data);  
-	   $this->load->view('viewDrinks', $data);
-	}
+  
 
 }
 ?>    
