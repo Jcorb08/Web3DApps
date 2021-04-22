@@ -162,7 +162,7 @@
             <div class="col-xs-12 col-sm-4">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/costa.jpg"
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/costa.png"
                             alt="Costa">
                     </a>
                     <div class="card-body">
