@@ -9,6 +9,7 @@ $pageURI =$_SERVER['REQUEST_URI'];
 echo $pageURI;
 // Returns part of the string that is the page we are accessing
 $pageURI =substr($pageURI,strrpos($pageURI,'index.php')+10);
+echo $pageURI;
 // can't find anything then it is homepage otherwise its a different page
 	if (!$pageURI)
 		new Controller('home');
