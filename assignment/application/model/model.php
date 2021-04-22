@@ -7,17 +7,14 @@ class Model {
 	public function __construct()
 	{
 		// Set up the database source name (DSN)
-		$dsn = 'sqlite:./db/test1.db';
+		$dsn = 'sqlite:./assets/db/data.db';
 		
 		// Then create a connection to a database with the PDO() function
 		try {	
 			// Change connection string for different databases, currently using SQLite
-			$this->dbhandle = new PDO($dsn, 'user', 'password', array(
-    													PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, //turn on errors in the form of exceptions
-    													PDO::ATTR_EMULATE_PREPARES => false, // turn off emulation mode for "real" prepared statements
-														));
-			// $this->dbhandle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			// echo 'Database connection created</br></br>';
+			$this->dbhandle = new PDO($dsn);
+			$this->dbhandle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			echo 'Database connection created</br></br>';
 		}
 		catch (PDOEXception $e) {
 			echo "I can't connect to the database!";
@@ -25,16 +22,8 @@ class Model {
         	print new Exception($e->getMessage());
     	}
 	}
-
-	// This is a simple fix to represent, what would in reality be, a table in the database containing the brand names. 
-	// The database schema would then contain a foreign key for each drink entry linking back to the brand name
-	// This structure allows us to read the list of brand names to populate a menu in a view
-	public function dbGetBrand()
-	{
-		// Return the Brand Names
-		return array("-", "Coke", "Coke Light","Coke Zero","Sprite", "Dr Pepper", "Fanta");
-	}
 	
+	/*
 	public function dbCreateTable()
 	{
 		try {
@@ -46,7 +35,8 @@ class Model {
 		}
 		$this->dbhandle = NULL;
 	}
-	
+	*/
+
 	public function dbInsertData()
 	{
 		try{
@@ -97,31 +87,6 @@ class Model {
 		$this->dbhandle = NULL;
 		// Send the response back to the view
 		return $result;
-	}
-	
-	//Method to simulate the model data
-	public function model3D_info()
-	{
-		// Simulate the model's data
-		return array(
-			'model_1' => 'Coke Can 3D Image 1',
-			'image3D_1' => 'coke_1',
-
-			'model_2' => 'Coke Can 3D Image 2',
-			'image3D_2' => 'coke_2',
-
-			'model_3' => 'Sprite Bottle 3D Image 1',
-			'image3D_3' => 'sprite_1',
-
-			'model_4' => 'Sprite Bottle 3D Image 2',
-			'image3D_4' => 'sprite_2',
-
-			'model_5' => 'Dr Pepper Cup 3D Image 1',
-			'image3D_5' => 'pepper_1',
-
-			'model_6' => 'Dr Pepper Cup 3D Image 2',
-			'image3D_6' => 'pepper_2'
-		);
 	}
 }
 ?>
