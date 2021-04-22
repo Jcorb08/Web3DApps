@@ -364,12 +364,18 @@ h1, h2, h3, h4, h5, h6 {
  }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+@media (min-width: 992px) { 
+    #main_3d_image {
+        background-image: url(../images/main_970.png);
+        background-repeat: no-repeat;
+        height: 497px;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
     #main_3d_image {
-        background-image: url(../images/main_758.png);
+        background-image: url(../images/main_1400.png);
         background-repeat: no-repeat;
         height: 522px;
     }
