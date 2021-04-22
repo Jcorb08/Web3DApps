@@ -162,7 +162,7 @@ body {
 }
 
 #main_3d_image {
-    background-image: url(../images/main_576.png);
+    background-image: url(../images/main/main_576.png);
     background-repeat: no-repeat;
     height: 215px;
 }
@@ -304,7 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {  
     #main_3d_image {
-        background-image: url(../images/main_768.png);
+        background-image: url(../images/main/main_768.png);
         background-repeat: no-repeat;
         height: 286px;
     }
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     #main_3d_image {
-        background-image: url(../images/main_1000.png);
+        background-image: url(../images/main/main_1000.png);
         background-repeat: no-repeat;
         height: 372px;
     }
@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     #main_3d_image {
-        background-image: url(../images/main_1400.png);
+        background-image: url(../images/main/main_1400.png);
         background-repeat: no-repeat;
         height: 522px;
     }
@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) {  
     #main_3d_image {
-        background-image: url(../images/main_1920.png);
+        background-image: url(../images/main/main_1920.png);
         background-repeat: no-repeat;
         height: 715px;
     }

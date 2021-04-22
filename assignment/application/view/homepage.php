@@ -126,6 +126,54 @@
                 </div>
 
             </div>
+            <!--Lilt-->
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/lilt.png"
+                            alt="Lilt">
+                    </a>
+                    <div class="card-body">
+                        <div id="title_right"></div>
+                        <div id="subtitle_right"></div>
+                        <div id="text_right"></div>
+                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                    </div>
+                </div>
+
+            </div>
+            <!--Oasis-->
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/oasis.jpg"
+                            alt="Oasis">
+                    </a>
+                    <div class="card-body">
+                        <div id="title_right"></div>
+                        <div id="subtitle_right"></div>
+                        <div id="text_right"></div>
+                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                    </div>
+                </div>
+
+            </div>
+            <!--Costa-->
+            <div class="col-xs-12 col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-to img-fluid img-thumbnail" src="assets/images/costa.jpg"
+                            alt="Costa">
+                    </a>
+                    <div class="card-body">
+                        <div id="title_right"></div>
+                        <div id="subtitle_right"></div>
+                        <div id="text_right"></div>
+                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
 
     </div>    
