@@ -96,14 +96,15 @@ class Model {
 	{
 		$json = json_decode(file_get_contents("assets/db/data.json"),true);
 		// [table][id-1][name]
-		var_dump($json);
+		//var_dump($json);
 		$returnstr = $this->dbInsertHomeData($json["Home"]) . " ";
-		$returnstr += $this->dbInsertModelData($json["Model"]) . " ";
+		$returnstr += $this->dbInsertModelsData($json["Models"]) . " ";
 		$returnstr += $this->dbInsertMiscData($json["Misc"]) . " ";
 		$this->dbhandle = NULL;
 		return $returnstr;
 	}
 
+	//Inserts Home table data
 	private function dbInsertHomeData($dataIn)
 	{
 		try{
@@ -121,11 +122,12 @@ class Model {
 		}
 	}
 
-	private function dbInsertModelData($dataIn)
+	//Inserts Models table data
+	private function dbInsertModelsData($dataIn)
 	{
 		try{
 			foreach($dataIn as $value){
-				$stmt = $this->dbhandle->prepare("INSERT INTO Model (x3dTitle, x3dMethod, HomeID) VALUES (?, ?, ?)");
+				$stmt = $this->dbhandle->prepare("INSERT INTO Models (x3dTitle, x3dMethod, HomeID) VALUES (?, ?, ?)");
 				$stmt->bindParam(1,$value['x3dtitle']);
 				$stmt->bindParam(2,$value['x3dmethod']);
 				$stmt->bindParam(3,$value['HomeID']);
@@ -138,6 +140,7 @@ class Model {
 		}
 	}
 
+	//Inserts Misc table data
 	private function dbInsertMiscData($dataIn)
 	{
 		try{
