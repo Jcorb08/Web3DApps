@@ -26,8 +26,7 @@ class Model {
 	//Creates all the tables in succession
 	public function dbCreateTables()
 	{
-		$returnstr = "";
-		$returnstr += dbCreateHomeTable();
+		$returnstr = dbCreateHomeTable();
 		$returnstr += dbCreateModelTable();
 		$returnstr += dbCreateMiscTable();
 		$this->dbhandle = NULL;
@@ -96,43 +95,46 @@ class Model {
 	public function dbInsertData()
 	{
 		$json = json_decode(file_get_contents("assets/db/data.json"),true);
-		var_dump($json);
+		// [table][id-1][name]
+		//var_dump($json);
+		$returnstr = dbInsertHomeData($json["Home"]);
+		//$returnstr += dbInsertModelData($json);
+		//$returnstr += dbInsertMiscData($json);
+		$this->dbhandle = NULL;
 	}
 
-	private function dbInsertHomeData()
+	private function dbInsertHomeData($dataIn)
 	{
 		try{
-			$this->dbhandle->exec(
-			"INSERT INTO Home (Title, Subtitle, Paragraph) 
-				VALUES ('X3D Coke Model', 'string_2', 'string_3'); " .
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (2, 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (3, 'X3D Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
-			return "X3D model data inserted successfully inside test1.db";
+			foreach($dataIn as $value){
+				$stmt = $this->dbhandle->prepare("INSERT INTO Home (Title, Subtitle, Paragraph) VALUES (?, ?, ?)");
+				$stmt->bindParam(1,$value['title']);
+				$stmt->bindParam(2,$value['subtitle']);
+				$stmt->bindParam(3,$value['paragraph']);
+				$stmt->execute();		
+			}
+			return "Home data inserted successfully inside test1.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
 		}
-		$this->dbhandle = NULL;
+
 	}
 
-	private function dbInsertModelData()
+	private function dbInsertModelData($datain)
 	{
 		try{
+			foreach($dataIn as $value){
+					
+			}
 			$this->dbhandle->exec(
 			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (1, 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (2, 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (3, 'X3D Pepper Model', 'string_2', 'string_3','string_4','string_5'); ");
-			return "X3D model data inserted successfully inside test1.db";
+				VALUES (1, 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); ");
+			return "Model data inserted successfully inside test1.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
 		}
-		$this->dbhandle = NULL;
 	}
 
 	public function dbGetData(){
