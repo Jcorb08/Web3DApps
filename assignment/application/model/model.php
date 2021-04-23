@@ -27,8 +27,8 @@ class Model {
 	public function dbCreateTables()
 	{
 		$returnstr = $this->dbCreateHomeTable() . " ";
-		$returnstr += $this->dbCreateModelTable() . " ";
-		$returnstr += $this->dbCreateMiscTable(). " ";
+		$returnstr .= $this->dbCreateModelTable() . " ";
+		$returnstr .= $this->dbCreateMiscTable(). " ";
 		$this->dbhandle = NULL;
 		return $returnstr;
 	}
@@ -98,8 +98,8 @@ class Model {
 		// [table][id-1][name]
 		//var_dump($json);
 		$returnstr = $this->dbInsertHomeData($json["Home"]) . " ";
-		$returnstr += $this->dbInsertModelsData($json["Models"]) . " ";
-		$returnstr += $this->dbInsertMiscData($json["Misc"]) . " ";
+		$returnstr .= $this->dbInsertModelsData($json["Models"]) . " ";
+		$returnstr .= $this->dbInsertMiscData($json["Misc"]) . " ";
 		$this->dbhandle = NULL;
 		return $returnstr;
 	}
