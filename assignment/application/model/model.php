@@ -26,9 +26,9 @@ class Model {
 	//Creates all the tables in succession
 	public function dbCreateTables()
 	{
-		$returnstr = dbCreateHomeTable();
-		$returnstr += dbCreateModelTable();
-		$returnstr += dbCreateMiscTable();
+		$returnstr = $this->dbCreateHomeTable() . " ";
+		$returnstr += $this->dbCreateModelTable() . " ";
+		$returnstr += $this->dbCreateMiscTable(). " ";
 		$this->dbhandle = NULL;
 		return $returnstr;
 	}
@@ -97,9 +97,9 @@ class Model {
 		$json = json_decode(file_get_contents("assets/db/data.json"),true);
 		// [table][id-1][name]
 		//var_dump($json);
-		$returnstr = $this->dbInsertHomeData($json["Home"]);
-		//$returnstr += dbInsertModelData($json);
-		//$returnstr += dbInsertMiscData($json);
+		$returnstr = $this->dbInsertHomeData($json["Home"]) . " ";
+		$returnstr += $this->dbInsertModelData($json["Model"]) . " ";
+		$returnstr += $this->dbInsertMiscData($json["Misc"]) . " ";
 		$this->dbhandle = NULL;
 		return $returnstr;
 	}
@@ -119,19 +119,41 @@ class Model {
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
 		}
-
 	}
 
 	private function dbInsertModelData($datain)
 	{
 		try{
 			foreach($dataIn as $value){
-					
+				$stmt = $this->dbhandle->prepare("INSERT INTO Model (x3dTitle, x3dMethod, HomeID) VALUES (?, ?, ?)");
+				$stmt->bindParam(1,$value['x3dtitle']);
+				$stmt->bindParam(2,$value['x3dmethod']);
+				$stmt->bindParam(3,$value['HomeID']);
+				$stmt->execute();		
 			}
-			$this->dbhandle->exec(
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (1, 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); ");
 			return "Model data inserted successfully inside test1.db";
+		}
+		catch(PD0EXception $e) {
+			print new Exception($e->getMessage());
+		}
+	}
+
+	private function dbInsertMiscData($datain)
+	{
+		try{
+			foreach($dataIn as $value){
+				$stmt = $this->dbhandle->prepare("INSERT INTO Misc (GalleryTitle, GalleryText, CameraTitle, CameraText, AnimationTitle, AnimationText, RenderTitle, RenderText) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+				$stmt->bindParam(1,$value['gallerytitle']);
+				$stmt->bindParam(2,$value['gallerytext']);
+				$stmt->bindParam(3,$value['cameratitle']);
+				$stmt->bindParam(4,$value['cameratext']);
+				$stmt->bindParam(5,$value['animationtitle']);
+				$stmt->bindParam(6,$value['animationtext']);
+				$stmt->bindParam(7,$value['rendertitle']);
+				$stmt->bindParam(8,$value['rendertext']);
+				$stmt->execute();		
+			}
+			return "Misc data inserted successfully inside test1.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
