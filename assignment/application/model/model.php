@@ -95,8 +95,8 @@ class Model {
 	//Inserts all data required in sucession
 	public function dbInsertData()
 	{
-		$jsondata = file_get_contents("assets/db/data.json");
-		var_dump($jsondata);
+		$json = json_decode(file_get_contents("assets/db/data.json"),true);
+		var_dump($json);
 	}
 
 	private function dbInsertHomeData()
