@@ -101,6 +101,7 @@ class Model {
 		//$returnstr += dbInsertModelData($json);
 		//$returnstr += dbInsertMiscData($json);
 		$this->dbhandle = NULL;
+		return $returnstr;
 	}
 
 	private function dbInsertHomeData($dataIn)
