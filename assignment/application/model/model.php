@@ -97,13 +97,13 @@ class Model {
 		$json = json_decode(file_get_contents("assets/db/data.json"),true);
 		// [table][id-1][name]
 		//var_dump($json);
-		$returnstr = dbInsertHomeData($json["Home"]);
+		$returnstr = $this->dbInsertHomeData($json["Home"]);
 		//$returnstr += dbInsertModelData($json);
 		//$returnstr += dbInsertMiscData($json);
 		$this->dbhandle = NULL;
 	}
 
-	function dbInsertHomeData($dataIn)
+	private function dbInsertHomeData($dataIn)
 	{
 		try{
 			foreach($dataIn as $value){
