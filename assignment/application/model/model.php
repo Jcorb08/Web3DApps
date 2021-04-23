@@ -103,7 +103,7 @@ class Model {
 		$this->dbhandle = NULL;
 	}
 
-	private function dbInsertHomeData($dataIn)
+	function dbInsertHomeData($dataIn)
 	{
 		try{
 			foreach($dataIn as $value){
