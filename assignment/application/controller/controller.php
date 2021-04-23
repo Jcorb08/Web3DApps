@@ -38,39 +38,21 @@ class Controller {
 		$this->load->view('test');
 	}
 
-	function apiCreateTable()
+	function dbCreateTables()
 	{
-	  	// echo "Create table function";
-		$data = $this->model->dbCreateTable();
-		$this->load->view('viewMessage', $data);
+		$data = $this->model->dbCreateTables();
+		$this->load->view('createTables', $data);
 	}
-	function apiInsertData()
+	function dbInsertData()
 	{
 		$data = $this->model->dbInsertData();
-	   	$this->load->view('viewMessage', $data);
+	   	$this->load->view('insertData', $data);
 	}  
-	function apiGetData()
+	function dbGetData()
 	{
 		$data = $this->model->dbGetData();
 		$this->load->view('view3DAppData', $data);
 	}  
-	
-	function dbCreateTable()
-	{
-		echo "Create Table Function";
-	}
-
-	function dbInsertData()
-	{
-		echo "Data Insert Function";
-	}
-
-	function dbGetData()
-	{
-		echo "Data Read Function";
-	}
-
-  
 
 }
 ?>    

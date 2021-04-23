@@ -23,26 +23,36 @@ class Model {
     	}
 	}
 	
+	//Creates all the tables in succession
+	public function dbCreateTables()
+	{
+		$returnstr = "";
+		$returnstr += dbCreateHomeTable();
+		$returnstr += dbCreateModelTable();
+		$returnstr += dbCreateMiscTable();
+		$this->dbhandle = NULL;
+		return $returnstr;
+	}
+
 	//Creating the Table Home for the Homepage content
-	public function dbCreateHomeTable()
+	private function dbCreateHomeTable()
 	{
 		try {
 			$this->dbhandle->exec("CREATE TABLE Home (  ". 
 									"ID	INTEGER NOT NULL UNIQUE, " .
 									"Title	TEXT NOT NULL, " .
 									"Subtitle	TEXT NOT NULL, " .
-									"Text	TEXT NOT NULL, " . 
+									"Paragraph	TEXT NOT NULL, " . 
 									"PRIMARY KEY('ID' AUTOINCREMENT) );");
 			return "Home table is successfully created inside data.db file";
 		}
 		catch (PD0EXception $e){
 			print new Exception($e->getMessage());
 		}
-		$this->dbhandle = NULL;
 	}
 
 	//Creating the Table Model for the Modelpage content
-	public function dbCreateModelTable()
+	private function dbCreateModelTable()
 	{
 		try {
 			$this->dbhandle->exec("CREATE TABLE Models ( " .
@@ -50,24 +60,51 @@ class Model {
 				"Brand	TEXT NOT NULL, " .
 				"x3dTitle	TEXT NOT NULL, " .
 				"x3dMethod	TEXT NOT NULL, " . 
-				"modelTitle	TEXT NOT NULL, " . 
-				"modelSubTitle	TEXT NOT NULL, " . 
-				"modelText	TEXT NOT NULL, " . 
+				"HomeID	INTEGER NOT NULL, " .
+				"FOREIGN KEY('HomeID') REFERENCES Home('ID') ON UPDATE CASCADE, " .
 				"PRIMARY KEY('ID' AUTOINCREMENT));");
 			return "Model table is successfully created inside data.db file";
 		}
 		catch (PD0EXception $e){
 			print new Exception($e->getMessage());
 		}
-		$this->dbhandle = NULL;
 	}
 
-	public function dbInsertHomeData()
+	//Creating the Table Model for the Modelpage content
+	private function dbCreateMiscTable()
+	{
+		try {
+			$this->dbhandle->exec("CREATE TABLE Misc ( " . 
+				"ID	INTEGER NOT NULL UNIQUE, " .
+				"GalleryTitle	TEXT NOT NULL, " .
+				"GalleryText	TEXT NOT NULL, " .
+				"CameraTitle	TEXT NOT NULL, " .
+				"CameraText	TEXT NOT NULL, " .
+				"AnimationTitle	TEXT NOT NULL, " .
+				"AnimationText	TEXT NOT NULL, " .
+				"RenderTitle	TEXT NOT NULL, " .
+				"RenderText	TEXT NOT NULL, " .
+				"PRIMARY KEY('ID' AUTOINCREMENT));");
+			return "Misc table is successfully created inside data.db file";
+		}
+		catch (PD0EXception $e){
+			print new Exception($e->getMessage());
+		}
+	}
+
+	//Inserts all data required in sucession
+	public function dbInsertData()
+	{
+		$jsondata = file_get_contents("assets/db/data.json");
+		var_dump($jsondata);
+	}
+
+	private function dbInsertHomeData()
 	{
 		try{
 			$this->dbhandle->exec(
-			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
-				VALUES (1, 'X3D Coke Model', 'string_2', 'string_3','string_4','string_5'); " .
+			"INSERT INTO Home (Title, Subtitle, Paragraph) 
+				VALUES ('X3D Coke Model', 'string_2', 'string_3'); " .
 			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
 				VALUES (2, 'X3D Sprite Model', 'string_2', 'string_3','string_4','string_5'); " .
 			"INSERT INTO Model_3D (Id, x3dModelTitle, x3dCreationMethod, modelTitle, modelSubtitle, modelDescription) 
@@ -80,7 +117,7 @@ class Model {
 		$this->dbhandle = NULL;
 	}
 
-	public function dbInsertModelData()
+	private function dbInsertModelData()
 	{
 		try{
 			$this->dbhandle->exec(
