@@ -92,7 +92,7 @@
                         <div id="title_cocacola"></div>
                         <div id="subtitle_cocacola"></div>
                         <div id="text_cocacola"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a href="https://www.coca-cola.co.uk/brands/coca-cola-original-taste" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         <div id="title_sprite"></div>
                         <div id="subtitle_sprite"></div>
                         <div id="text_sprite"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a href="https://www.coca-cola.co.uk/brands/sprite" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                         <div id="title_drpepper"></div>
                         <div id="subtitle_drpepper"></div>
                         <div id="text_drpepper"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a href="https://www.coca-cola.co.uk/brands/dr-pepper" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
 
@@ -137,7 +137,7 @@
                         <div id="title_lilt"></div>
                         <div id="subtitle_lilt"></div>
                         <div id="text_lilt"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a href="https://www.coca-cola.co.uk/brands/lilt" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
 
@@ -153,7 +153,7 @@
                         <div id="title_oasis"></div>
                         <div id="subtitle_oasis"></div>
                         <div id="text_oasis"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a href="https://www.coca-cola.co.uk/brands/oasis" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
 
@@ -169,7 +169,7 @@
                         <div id="title_costa"></div>
                         <div id="subtitle_costa"></div>
                         <div id="text_costa"></div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a href="https://www.coca-cola.co.uk/brands/costa-coffee" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
 

@@ -210,7 +210,7 @@ body {
         border-top-right-radius: 0.25rem;
     max-width: 100%;
     height: auto;
-    float: right;
+    text-align: center;
 }
 
 /* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
