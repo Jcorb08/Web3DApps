@@ -1,14 +1,14 @@
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover(); 
   
-  $.getJSON("index.php", function(rawjson){
+  $.getJSON("controller.php", function(rawjson){
     // can see the object returned
     var jsonObj = $.parseJSON(rawjson);
     console.log(jsonObj);
     // get home page text
-    $('#title_home').html('<h2>' + jsonObj.Title + '</h2>');
-    $('#subtitle_home').html('<h3>' + jsonObj.Subtitle + '</h3>');
-    $('#text_home').html('<p>' + jsonObj.Paragraph + '</p>');
+    $('#title_home').html('<h2>' + jsonObj[0].Title + '</h2>');
+    $('#subtitle_home').html('<h3>' + jsonObj[0].Subtitle + '</h3>');
+    $('#text_home').html('<p>' + jsonObj[0].Paragraph + '</p>');
 
     // cocacola text
     $('#title_cocacola').html('<h2>' + jsonObj.pageTextData[1].Title + '</h2>');
