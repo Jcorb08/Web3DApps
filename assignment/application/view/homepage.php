@@ -74,8 +74,8 @@
                 <div id="main_3d_image">
                     <div id="main_text" class="col-xs-12 col-sm-4">
                         <div id="title_home"><?php echo $data['0']['Title']?></div>
-                        <div id="subtitle_home"><?php echo $data['0']['SubTitle']?></div>
-                        <div id="text_home"><?php echo $data['0']['SubTitle']?></div>
+                        <div id="subtitle_home"><?php echo $data['0']['Subtitle']?></div>
+                        <div id="text_home"><?php echo $data['0']['Paragraph']?></div>
                     </div>
                 </div>
             </div>
