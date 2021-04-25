@@ -209,14 +209,13 @@ class Model {
 	{
 		try{
 			// Prepare a statement to get all records from the Model_3D table
-			$sql = 'SELECT * FROM Home WHERE ID = "1" ';
+			$sql = 'SELECT * FROM Misc WHERE ID = "1" ';
 			// Use PDO query() to query the database with the prepared SQL statement
 			$stmt = $this->dbhandle->query($sql);
 			// Set up an array to return the results to the view
 			$result = null;
 			// Use PDO fetch() to retrieve the results from the database using a while loop	
 			if ($data = $stmt->fetch()){
-				var_dump($data);
 				// Write the database conetnts to the results array for sending back to the view
 				$result[0]['GalleryTitle'] = $data['GalleryTitle'];
 				$result[0]['GalleryText'] = $data['GalleryText'];
