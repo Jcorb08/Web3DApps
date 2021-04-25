@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover(); 
   
-  $.getJSON("index.php", function(jsonObj){
+  $.getJSON("controller.php", function(jsonObj){
     // can see the object returned
     console.log(jsonObj);
     // get home page text
