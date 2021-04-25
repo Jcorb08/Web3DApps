@@ -164,9 +164,9 @@ class Model {
 
 	public function dbGetAllData(){
 		
-		$result = dbGetHomeData(true);
-		$result .= dbGetMiscData(true);
-		$result .= dbGetModelsData(true);
+		$result = $this->dbGetHomeData(true);
+		$result .= $this->dbGetMiscData(true);
+		$result .= $this->dbGetModelsData(true);
 		// Close the database connection
 		$this->dbhandle = NULL;
 		// Send the response back to the view
