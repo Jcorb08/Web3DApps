@@ -27,12 +27,15 @@ class Controller {
     // home page function
 	function home()
 	{
+		// load php file for homepage
+		$this->load->view('homepage');
+	}
+
+	function getHomeData()
+	{
 		// get text data for cards
 		$data = $this->model->dbGetHomeData();
 		echo json_encode($data);
-		// load php file for homepage
-		$this->load->view('homepage');
-
 	}
 
 	function test()
