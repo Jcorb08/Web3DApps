@@ -1,9 +1,8 @@
 <?php
-  var_dump($data);
   foreach($data as $row){
-    echo '<br>';
+    echo '<br><br>';
     foreach($row as $item){
-      echo $item . ' ';
+      echo $item . '<br>';
     }
   }
 ?>
