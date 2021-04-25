@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover(); 
   
-  $.getJSON("application/controller/controller.php", function(rawjson){
+  $.getJSON("index.php", function(rawjson){
     // can see the object returned
     var jsonObj = $.parseJSON(rawjson);
     console.log(jsonObj);
