@@ -29,7 +29,7 @@ class Controller {
 	{
 		// get text data for cards
 		$data = $this->model->dbGetHomeData();
-		echo $data;
+		var_dump($data);
 		// load php file for homepage
 		$this->load->view('homepage', $data);
 	}
