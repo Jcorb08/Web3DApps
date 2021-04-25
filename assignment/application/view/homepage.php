@@ -85,7 +85,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid center-block img-thumbnail" src="assets/images/coca_cola.jpg"
+                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/coca_cola.jpg"
                             alt="Coca Cola">
                     </a>
                     <div class="card-body">
@@ -114,7 +114,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid text-center img-thumbnail" src="assets/images/dr_pepper.jpg"
+                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/dr_pepper.jpg"
                             alt="Dr Pepper">
                     </a>
                     <div class="card-body">
@@ -130,7 +130,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid text-center img-thumbnail" src="assets/images/lilt.png"
+                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/lilt.png"
                             alt="Lilt">
                     </a>
                     <div class="card-body">
@@ -146,7 +146,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid text-center img-thumbnail" src="assets/images/oasis.jpg"
+                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/oasis.jpg"
                             alt="Oasis">
                     </a>
                     <div class="card-body">
@@ -162,7 +162,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid text-center img-thumbnail" src="assets/images/costa.png"
+                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/costa.png"
                             alt="Costa">
                     </a>
                     <div class="card-body">
