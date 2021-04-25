@@ -267,8 +267,5 @@ class Model {
 		// Send the response back to the view
 		return $result;
 	}
-
-	p
-
 }
 ?>

@@ -51,9 +51,9 @@ class Controller {
 	function dbGetAllData()
 	{
 		$data = $this->model->dbGetAllData();
-		$this->load->view('view3DAppData', $data);
+		$this->load->view('viewTables', $data);
 	}  
-	
+
 
 }
 ?>    
