@@ -48,11 +48,12 @@ class Controller {
 		$data = $this->model->dbInsertData();
 	   	$this->load->view('insertData', $data);
 	}  
-	function dbGetData()
+	function dbGetAllData()
 	{
-		$data = $this->model->dbGetData();
+		$data = $this->model->dbGetAllData();
 		$this->load->view('view3DAppData', $data);
 	}  
+	
 
 }
 ?>    

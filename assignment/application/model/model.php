@@ -39,7 +39,7 @@ class Model {
 		try {
 			$this->dbhandle->exec("CREATE TABLE Home (  ". 
 									"ID	INTEGER NOT NULL UNIQUE, " .
-									"Title	TEXT NOT NULL, " .
+									"Title	TEXT NOT NULL UNIQUE, " .
 									"Subtitle	TEXT NOT NULL, " .
 									"Paragraph	TEXT NOT NULL, " . 
 									"PRIMARY KEY('ID' AUTOINCREMENT) );");
@@ -56,10 +56,9 @@ class Model {
 		try {
 			$this->dbhandle->exec("CREATE TABLE Models ( " .
 				"ID	INTEGER NOT NULL UNIQUE, " .
-				"Brand	TEXT NOT NULL, " .
 				"x3dTitle	TEXT NOT NULL, " .
 				"x3dMethod	TEXT NOT NULL, " . 
-				"HomeID	INTEGER NOT NULL, " .
+				"HomeID	INTEGER NOT NULL UNIQUE, " .
 				"FOREIGN KEY('HomeID') REFERENCES Home('ID') ON UPDATE CASCADE, " .
 				"PRIMARY KEY('ID' AUTOINCREMENT));");
 			return "Model table is successfully created inside data.db file";
@@ -163,10 +162,22 @@ class Model {
 		}
 	}
 
-	public function dbGetData(){
+	public function dbAllGetData(){
+		
+		$result = dbGetHomeData(true);
+		$result .= dbGetMiscData(true);
+		$result .= dbGetModelsData(true);
+		// Close the database connection
+		$this->dbhandle = NULL;
+		// Send the response back to the view
+		return $result;
+	}
+
+	public function dbGetHomeData($calledFromModelFunction = false)
+	{
 		try{
 			// Prepare a statement to get all records from the Model_3D table
-			$sql = 'SELECT * FROM Model_3D';
+			$sql = 'SELECT * FROM Home';
 			// Use PDO query() to query the database with the prepared SQL statement
 			$stmt = $this->dbhandle->query($sql);
 			// Set up an array to return the results to the view
@@ -176,14 +187,10 @@ class Model {
 			// Use PDO fetch() to retrieve the results from the database using a while loop
 			// Use a while loop to loop through the rows	
 			while ($data = $stmt->fetch()) {
-				// Don't worry about this, it's just a simple test to check we can output a value from the database in a while loop
-				// echo '</br>' . $data['x3dModelTitle'];
 				// Write the database conetnts to the results array for sending back to the view
-				$result[$i]['x3dModelTitle'] = $data['x3dModelTitle'];
-				$result[$i]['x3dCreationMethod'] = $data['x3dCreationMethod'];
-				$result[$i]['modelTitle'] = $data['modelTitle'];
-				$result[$i]['modelSubtitle'] = $data['modelSubtitle'];
-				$result[$i]['modelDescription'] = $data['modelDescription'];
+				$result[$i]['Title'] = $data['Title'];
+				$result[$i]['Subtitle'] = $data['Subtitle'];
+				$result[$i]['Paragraph'] = $data['Paragraph'];
 				//increment the row index
 				$i++;
 			}
@@ -191,10 +198,77 @@ class Model {
 		catch (PD0EXception $e) {
 			print new Exception($e->getMessage());
 		}
-		// Close the database connection
-		$this->dbhandle = NULL;
+		if (!$calledFromModelFunction){
+			$this->dbhandle = NULL;
+		}
 		// Send the response back to the view
 		return $result;
 	}
+
+	public function dbGetMiscData($calledFromModelFunction = false)
+	{
+		try{
+			// Prepare a statement to get all records from the Model_3D table
+			$sql = 'SELECT * FROM Home WHERE ID = "1" ';
+			// Use PDO query() to query the database with the prepared SQL statement
+			$stmt = $this->dbhandle->query($sql);
+			// Set up an array to return the results to the view
+			$result = null;
+			// Use PDO fetch() to retrieve the results from the database using a while loop	
+			$data = $stmt->fetch();
+			// Write the database conetnts to the results array for sending back to the view
+			$result[$i]['GalleryTitle'] = $data['GalleryTitle'];
+			$result[$i]['GalleryText'] = $data['GalleryText'];
+			$result[$i]['CameraTitle'] = $data['CameraTitle'];
+			$result[$i]['CameraText'] = $data['CameraText'];
+			$result[$i]['AnimationTitle'] = $data['AnimationTitle'];
+			$result[$i]['AnimationText'] = $data['AnimationText'];
+			$result[$i]['RenderTitle'] = $data['RenderTitle'];
+			$result[$i]['RenderText'] = $data['RenderText'];
+		}
+		catch (PD0EXception $e) {
+			print new Exception($e->getMessage());
+		}
+		if (!$calledFromModelFunction){
+			$this->dbhandle = NULL;
+		}
+		// Send the response back to the view
+		return $result;
+	}
+
+	public function dbGetModelsData($calledFromModelFunction = false)
+	{
+		try{
+			// Prepare a statement to get all records from the Model_3D table
+			$sql = 'SELECT * FROM Models';
+			// Use PDO query() to query the database with the prepared SQL statement
+			$stmt = $this->dbhandle->query($sql);
+			// Set up an array to return the results to the view
+			$result = null;
+			// Set up a variable to index each row of the array
+			$i=-0;
+			// Use PDO fetch() to retrieve the results from the database using a while loop
+			// Use a while loop to loop through the rows	
+			while ($data = $stmt->fetch()) {
+				// Write the database conetnts to the results array for sending back to the view
+				$result[$i]['x3dTitle'] = $data['x3dTitle'];
+				$result[$i]['x3dMethod'] = $data['x3dMethod'];
+				$result[$i]['HomeID'] = $data['HomeID'];
+				//increment the row index
+				$i++;
+			}
+		}
+		catch (PD0EXception $e) {
+			print new Exception($e->getMessage());
+		}
+		if (!$calledFromModelFunction){
+			$this->dbhandle = NULL;
+		}
+		// Send the response back to the view
+		return $result;
+	}
+
+	p
+
 }
 ?>
