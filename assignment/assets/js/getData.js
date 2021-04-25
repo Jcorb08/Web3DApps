@@ -27,19 +27,19 @@ $(document).ready(function(){
     $('#text_drpepper').html('<p>' + jsonObj[3].Paragraph + '</p>');
 
     // lilt text
-    $('#title_lilt').html('<h2>' + jsonObj[3].Title + '</h2>');
-    $('#subtitle_lilt').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
-    $('#text_lilt').html('<p>' + jsonObj[3].Paragraph + '</p>');
+    $('#title_lilt').html('<h2>' + jsonObj[4].Title + '</h2>');
+    $('#subtitle_lilt').html('<h3>' + jsonObj[4].Subtitle + '</h3>');
+    $('#text_lilt').html('<p>' + jsonObj[4].Paragraph + '</p>');
   
     // oasis text
-    $('#title_oasis').html('<h2>' + jsonObj[3].Title + '</h2>');
-    $('#subtitle_oasis').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
-    $('#text_oasis').html('<p>' + jsonObj[3].Paragraph + '</p>');
+    $('#title_oasis').html('<h2>' + jsonObj[5].Title + '</h2>');
+    $('#subtitle_oasis').html('<h3>' + jsonObj[5].Subtitle + '</h3>');
+    $('#text_oasis').html('<p>' + jsonObj[5].Paragraph + '</p>');
 
      // costa text
-     $('#title_costa').html('<h2>' + jsonObj[3].Title + '</h2>');
-     $('#subtitle_costa').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
-     $('#text_costa').html('<p>' + jsonObj[3].Paragraph + '</p>');
+     $('#title_costa').html('<h2>' + jsonObj[6].Title + '</h2>');
+     $('#subtitle_costa').html('<h3>' + jsonObj[6].Subtitle + '</h3>');
+     $('#text_costa').html('<p>' + jsonObj[6].Paragraph + '</p>');
     
     /*
     // coke 
