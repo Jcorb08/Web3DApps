@@ -217,14 +217,14 @@ class Model {
 			// Use PDO fetch() to retrieve the results from the database using a while loop	
 			$data = $stmt->fetch();
 			// Write the database conetnts to the results array for sending back to the view
-			$result[$i]['GalleryTitle'] = $data['GalleryTitle'];
-			$result[$i]['GalleryText'] = $data['GalleryText'];
-			$result[$i]['CameraTitle'] = $data['CameraTitle'];
-			$result[$i]['CameraText'] = $data['CameraText'];
-			$result[$i]['AnimationTitle'] = $data['AnimationTitle'];
-			$result[$i]['AnimationText'] = $data['AnimationText'];
-			$result[$i]['RenderTitle'] = $data['RenderTitle'];
-			$result[$i]['RenderText'] = $data['RenderText'];
+			$result['GalleryTitle'] = $data['GalleryTitle'];
+			$result['GalleryText'] = $data['GalleryText'];
+			$result['CameraTitle'] = $data['CameraTitle'];
+			$result['CameraText'] = $data['CameraText'];
+			$result['AnimationTitle'] = $data['AnimationTitle'];
+			$result['AnimationText'] = $data['AnimationText'];
+			$result['RenderTitle'] = $data['RenderTitle'];
+			$result['RenderText'] = $data['RenderText'];
 		}
 		catch (PD0EXception $e) {
 			print new Exception($e->getMessage());
