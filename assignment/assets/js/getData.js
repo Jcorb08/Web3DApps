@@ -1,9 +1,9 @@
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover(); 
   
-  $.getJSON("index.php/getHomeData", function(rawjson){
+  $.getJSON("index.php/getHomeData", function(jsonObj){
     // can see the object returned
-    var jsonObj = $.parseJSON(rawjson);
+    //var jsonObj = $.parseJSON(rawjson);
     console.log("ajax");
     console.log(jsonObj);
     // get home page text
