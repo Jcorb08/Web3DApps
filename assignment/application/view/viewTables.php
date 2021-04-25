@@ -1,3 +1,3 @@
 <?php
-  echo $data;
+  var_dump($data);
 ?>
