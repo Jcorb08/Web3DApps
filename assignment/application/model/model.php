@@ -216,6 +216,7 @@ class Model {
 			$result = null;
 			// Use PDO fetch() to retrieve the results from the database using a while loop	
 			if ($data = $stmt->fetch()){
+				echo $data;
 				// Write the database conetnts to the results array for sending back to the view
 				$result[0]['GalleryTitle'] = $data['GalleryTitle'];
 				$result[0]['GalleryText'] = $data['GalleryText'];
