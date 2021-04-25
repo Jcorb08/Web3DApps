@@ -85,7 +85,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid text-center img-thumbnail" src="assets/images/coca_cola.jpg"
+                        <img class="card-img-to img-fluid center-block img-thumbnail" src="assets/images/coca_cola.jpg"
                             alt="Coca Cola">
                     </a>
                     <div class="card-body">
