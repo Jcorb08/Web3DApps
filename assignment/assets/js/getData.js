@@ -4,6 +4,7 @@ $(document).ready(function(){
   $.getJSON("index.php", function(rawjson){
     // can see the object returned
     var jsonObj = $.parseJSON(rawjson);
+    console.log("ajax");
     console.log(jsonObj);
     // get home page text
     $('#title_home').html('<h2>' + jsonObj[0].Title + '</h2>');
