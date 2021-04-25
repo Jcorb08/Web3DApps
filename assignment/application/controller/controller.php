@@ -29,9 +29,10 @@ class Controller {
 	{
 		// get text data for cards
 		$data = $this->model->dbGetHomeData();
+		echo json_encode($data);
 		// load php file for homepage
 		$this->load->view('homepage');
-		echo json_encode($data);
+
 	}
 
 	function test()
