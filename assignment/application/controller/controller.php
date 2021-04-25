@@ -53,7 +53,21 @@ class Controller {
 		$data = $this->model->dbGetAllData();
 		$this->load->view('viewTables', $data);
 	}  
-
+	function dbGetHomeData()
+	{
+		$data = $this->model->dbGetHomeData();
+		$this->load->view('viewTables', $data);
+	}
+	function dbGetMiscData()
+	{
+		$data = $this->model->dbGetMiscData();
+		$this->load->view('viewTables', $data);
+	}
+	function dbGetModelsData()
+	{
+		$data = $this->model->dbGetModelsData();
+		$this->load->view('viewTables', $data);
+	}
 
 }
 ?>    
