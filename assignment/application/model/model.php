@@ -14,7 +14,7 @@ class Model {
 			// Change connection string for different databases, currently using SQLite
 			$this->dbhandle = new PDO($dsn);
 			$this->dbhandle->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			echo 'Database connection created!';
+			//echo 'Database connection created!';
 		}
 		catch (PDOEXception $e) {
 			echo "I can't connect to the database!";
