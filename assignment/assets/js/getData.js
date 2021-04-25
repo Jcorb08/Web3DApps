@@ -12,19 +12,34 @@ $(document).ready(function(){
     $('#text_home').html('<p>' + jsonObj[0].Paragraph + '</p>');
 
     // cocacola text
-    $('#title_cocacola').html('<h2>' + jsonObj.pageTextData[1].Title + '</h2>');
-    $('#subtitle_cocacola').html('<h3>' + jsonObj.pageTextData[1].Subtitle + '</h3>');
-    $('#text_cocacola').html('<p>' + jsonObj.pageTextData[1].Paragraph + '</p>');
+    $('#title_cocacola').html('<h2>' + jsonObj[1].Title + '</h2>');
+    $('#subtitle_cocacola').html('<h3>' + jsonObj[1].Subtitle + '</h3>');
+    $('#text_cocacola').html('<p>' + jsonObj[1].Paragraph + '</p>');
 
     // sprite text
-    $('#title_sprite').html('<h2>' + jsonObj.pageTextData[2].Title + '</h2>');
-    $('#subtitle_sprite').html('<h3>' + jsonObj.pageTextData[2].Subtitle + '</h3>');
-    $('#text_sprite').html('<p>' + jsonObj.pageTextData[2].Paragraph + '</p>');
+    $('#title_sprite').html('<h2>' + jsonObj[2].Title + '</h2>');
+    $('#subtitle_sprite').html('<h3>' + jsonObj[2].Subtitle + '</h3>');
+    $('#text_sprite').html('<p>' + jsonObj[2].Paragraph + '</p>');
 
     // drpepper text
-    $('#title_drpepper').html('<h2>' + jsonObj.pageTextData[3].Title + '</h2>');
-    $('#subtitle_drpepper').html('<h3>' + jsonObj.pageTextData[3].Subtitle + '</h3>');
-    $('#text_drpepper').html('<p>' + jsonObj.pageTextData[3].Paragraph + '</p>');
+    $('#title_drpepper').html('<h2>' + jsonObj[3].Title + '</h2>');
+    $('#subtitle_drpepper').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
+    $('#text_drpepper').html('<p>' + jsonObj[3].Paragraph + '</p>');
+
+    // lilt text
+    $('#title_lilt').html('<h2>' + jsonObj[3].Title + '</h2>');
+    $('#subtitle_lilt').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
+    $('#text_lilt').html('<p>' + jsonObj[3].Paragraph + '</p>');
+  
+    // oasis text
+    $('#title_oasis').html('<h2>' + jsonObj[3].Title + '</h2>');
+    $('#subtitle_oasis').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
+    $('#text_oasis').html('<p>' + jsonObj[3].Paragraph + '</p>');
+
+     // costa text
+     $('#title_costa').html('<h2>' + jsonObj[3].Title + '</h2>');
+     $('#subtitle_costa').html('<h3>' + jsonObj[3].Subtitle + '</h3>');
+     $('#text_costa').html('<p>' + jsonObj[3].Paragraph + '</p>');
     
     /*
     // coke 
