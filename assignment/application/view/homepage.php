@@ -73,7 +73,7 @@
             <div class="col-sm-12">
                 <div id="main_3d_image">
                     <div id="main_text" class="col-xs-12 col-sm-4">
-                        <div id="title_home"></div>
+                        <div id="title_home"><?php echo $data['0']['Title']?></div>
                         <div id="subtitle_home"></div>
                         <div id="text_home"></div>
                     </div>
