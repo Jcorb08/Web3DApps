@@ -100,7 +100,7 @@
             <div class="col-xs-12 col-sm-4 col-xl-3">
                 <div class="card">
                     <a href="#">
-                        <img class="card-img-to img-fluid text-center img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
+                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
                     </a>
                     <div class="card-body">
                         <div id="title_sprite"></div>
