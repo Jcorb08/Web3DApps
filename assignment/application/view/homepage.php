@@ -89,9 +89,9 @@
                             alt="Coca Cola">
                     </a>
                     <div class="card-body">
-                        <div id="title_left"></div>
-                        <div id="subtitle_left"></div>
-                        <div id="text_left"></div>
+                        <div id="title_cocacola"></div>
+                        <div id="subtitle_cocacola"></div>
+                        <div id="text_cocacola"></div>
                         <a href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
@@ -103,9 +103,9 @@
                         <img class="card-img-to img-fluid img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
                     </a>
                     <div class="card-body">
-                        <div id="title_centre"></div>
-                        <div id="subtitle_centre"></div>
-                        <div id="text_centre"></div>
+                        <div id="title_sprite"></div>
+                        <div id="subtitle_sprite"></div>
+                        <div id="text_sprite"></div>
                         <a href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
@@ -118,9 +118,9 @@
                             alt="Dr Pepper">
                     </a>
                     <div class="card-body">
-                        <div id="title_right"></div>
-                        <div id="subtitle_right"></div>
-                        <div id="text_right"></div>
+                        <div id="title_drpepper"></div>
+                        <div id="subtitle_drpepper"></div>
+                        <div id="text_drpepper"></div>
                         <a href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
@@ -134,9 +134,9 @@
                             alt="Lilt">
                     </a>
                     <div class="card-body">
-                        <div id="title_right"></div>
-                        <div id="subtitle_right"></div>
-                        <div id="text_right"></div>
+                        <div id="title_lilt"></div>
+                        <div id="subtitle_lilt"></div>
+                        <div id="text_lilt"></div>
                         <a href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
@@ -150,9 +150,9 @@
                             alt="Oasis">
                     </a>
                     <div class="card-body">
-                        <div id="title_right"></div>
-                        <div id="subtitle_right"></div>
-                        <div id="text_right"></div>
+                        <div id="title_oasis"></div>
+                        <div id="subtitle_oasis"></div>
+                        <div id="text_oasis"></div>
                         <a href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
@@ -166,9 +166,9 @@
                             alt="Costa">
                     </a>
                     <div class="card-body">
-                        <div id="title_right"></div>
-                        <div id="subtitle_right"></div>
-                        <div id="text_right"></div>
+                        <div id="title_costa"></div>
+                        <div id="subtitle_costa"></div>
+                        <div id="text_costa"></div>
                         <a href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
@@ -231,7 +231,7 @@
     <!--gallery generator-->
     <script src="assets/js/gallery.js"></script>
     <!--JS data getter-->
-    <script src="assets/js/getJsonData.js"></script>
+    <script src="assets/js/getData.js"></script>
     <!--Model animations-->
     <script src="assets/js/model.js"></script>
 </body>
