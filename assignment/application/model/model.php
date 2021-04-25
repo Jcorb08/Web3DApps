@@ -162,7 +162,7 @@ class Model {
 		}
 	}
 
-	public function dbAllGetData(){
+	public function dbGetAllData(){
 		
 		$result = dbGetHomeData(true);
 		$result .= dbGetMiscData(true);
