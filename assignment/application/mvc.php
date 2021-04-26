@@ -10,7 +10,7 @@ echo $pageURI . " original";
 // Returns part of the string that is the page we are accessing
 $pageURI =substr($pageURI,strrpos($pageURI,'index.php')+10);
 echo $pageURI . " uri with ()";
-$parameter =substr($pageURI,strrpos($pageURI, '('), -1);
+$parameter =substr($pageURI,strrpos($pageURI, '(')+1, -1);
 $pageURI = substr($pageURI,0, strrpos($pageURI,'('));
 echo $pageURI . " uri ";
 echo $parameter . "  parra ";
