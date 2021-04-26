@@ -292,11 +292,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .copyright {
-    padding-top: 8px;
+    padding-top: 20px;
 }
 
 .social {
-    padding-top: 0px;
+    padding-top: 7px;
     
 }
 
@@ -309,6 +309,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /* CSS rule to style the footer */
+    /*
     .footer {
         background-color: #257600;
         height: 60px;
@@ -347,6 +348,7 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 43%;
         height: auto;
     }
+    */
 
 }
 
