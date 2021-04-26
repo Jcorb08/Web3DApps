@@ -268,5 +268,35 @@ class Model {
 		// Send the response back to the view
 		return $result;
 	}
+
+	public function dbGetModelData($modelName)
+	{
+		try{
+			// Prepare a statement to get all records from the Model_3D table
+			$sql = 'SELECT * FROM Models WHERE ';
+			// Use PDO query() to query the database with the prepared SQL statement
+			$stmt = $this->dbhandle->query($sql);
+			// Set up an array to return the results to the view
+			$result = null;
+			// Set up a variable to index each row of the array
+			$i=-0;
+			// Use PDO fetch() to retrieve the results from the database using a while loop
+			// Use a while loop to loop through the rows	
+			while ($data = $stmt->fetch()) {
+				// Write the database conetnts to the results array for sending back to the view
+				$result[$i]['x3dTitle'] = $data['x3dTitle'];
+				$result[$i]['x3dMethod'] = $data['x3dMethod'];
+				$result[$i]['HomeID'] = $data['HomeID'];
+				//increment the row index
+				$i++;
+			}
+		}
+		catch (PD0EXception $e) {
+			print new Exception($e->getMessage());
+		}
+		$this->dbhandle = NULL;
+		// Send the response back to the view
+		return $result;
+	}
 }
 ?>
