@@ -203,13 +203,14 @@ body {
 
 .img-thumbnail {
     padding: .25rem;
-    background-color: #007BFF;
-    border: 1px solid #007BFF;
+    background-color: white;
+    border: 1px solid black;
     border-radius: .25rem;
         border-top-left-radius: 0.25rem;
         border-top-right-radius: 0.25rem;
     max-width: 100%;
     height: auto;
+    text-align: left;
 }
 
 /* Lifted form the bootsrap.css file, and modified to emulate the nav-bar menu styling */
