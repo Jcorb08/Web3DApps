@@ -17,12 +17,12 @@ class Controller {
 	public $model;
 	
 	// Create functions for the controller class
-	function __construct($pageURI = null) // constructor of the class
+	function __construct($pageURI = null, $parameter = null) // constructor of the class
 	{
 		$this->load = new Load(); 
 		$this->model = new Model();
 		// determine what page you are on
-		$this->$pageURI();
+		$this->$pageURI($parameter);
 	}
     // home page function
 	function home()

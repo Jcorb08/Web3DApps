@@ -83,4 +83,5 @@ function getModelData(model){
     $('#title_pepper').html('<h2>' + jsonObj.pageTextData[6].title + '</h2>');
     $('#subtitle_pepper').html('<h3>' + jsonObj.pageTextData[6].subtitle + '</h3>');
     $('#text_pepper').html('<p>' + jsonObj.pageTextData[6].text + '</p>');
+    */
 }
