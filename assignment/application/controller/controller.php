@@ -22,7 +22,7 @@ class Controller {
 		$this->load = new Load(); 
 		$this->model = new Model();
 		// determine what page you are on
-		$this->$pageURI($parameter);
+		$this->$pageURI();
 	}
     // home page function
 	function home()
