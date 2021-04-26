@@ -6,7 +6,7 @@ require 'model/model.php';
 require 'controller/controller.php';
 // The URI which was given in order to access this page; for instance, '/index.html'. 
 $pageURI =$_SERVER['REQUEST_URI'];
-//echo $pageURI . " ";
+echo $pageURI . " original";
 // Returns part of the string that is the page we are accessing
 $pageURI =substr($pageURI,strrpos($pageURI,'index.php')+10);
 echo $pageURI . " uri with ()";
