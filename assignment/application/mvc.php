@@ -11,6 +11,10 @@ echo $pageURI . " original";
 $pageURI =substr($pageURI,strrpos($pageURI,'index.php')+10);
 echo $pageURI . " uri with ()";
 $parameter =substr($pageURI,strrpos($pageURI, '(')+1, -1);
+if (strrpos($pageURI,'(')){
+	$pageURI = substr($pageURI,0, strrpos($pageURI,'('));
+	echo $pageURI . " uri ";
+}
 echo $parameter . "  parra ";
 // can't find anything then it is homepage otherwise its a different page
 	if (!$pageURI)
