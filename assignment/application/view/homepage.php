@@ -429,9 +429,9 @@
 
     <!--popovers, swap function, custom scripts-->
     <script src="assets/js/swap.js"></script>
-    <!--gallery generator-->
+    <!--gallery generator
     <script src="assets/js/gallery.js"></script>
-    <!--JS data getter-->
+    JS data getter-->
     <script src="assets/js/getData.js"></script>
     <!--Model animations-->
     <script src="assets/js/model.js"></script>
