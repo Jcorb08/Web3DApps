@@ -200,8 +200,10 @@ body {
     background-color: rgba(182, 231, 243, 1.0);
 }
 
-.card-body{
+.card-body > p{
     text-align: left;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 .img-thumbnail {
