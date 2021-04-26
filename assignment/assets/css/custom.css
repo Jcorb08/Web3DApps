@@ -198,6 +198,7 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgba(182, 231, 243, 1.0);
+    text-align: left;
 }
 
 .img-thumbnail {
