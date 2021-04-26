@@ -38,6 +38,19 @@ class Controller {
 		echo json_encode($data);
 	}
 
+	function getMiscData()
+	{
+		// get text data for MiscItems on model page
+		$data = $this->model->dbGetMiscData();
+		echo json_encode($data);
+	}
+
+	function getModelData(){
+		// calls function dependant on model (parameter?)
+		$data = $this->model->
+		echo json_encode($data);
+	}
+
 	function test()
 	{
 		$this->load->view('test');

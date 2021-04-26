@@ -1,6 +1,10 @@
 $(document).ready(function(){
   $('[data-toggle="popover"]').popover(); 
-  
+  // gathers home data using ajax request and inserts it into doc
+  getHomeData();
+});
+
+function getHomeData(){
   $.getJSON("index.php/getHomeData", function(jsonObj){
     // can see the object returned
     //var jsonObj = $.parseJSON(rawjson);
@@ -40,8 +44,25 @@ $(document).ready(function(){
      $('#title_costa').html('<h2>' + jsonObj[6].Title + '</h2>');
      $('#subtitle_costa').html('<h3>' + jsonObj[6].Subtitle + '</h3>');
      $('#text_costa').html('<p>' + jsonObj[6].Paragraph + '</p>');
+  });
+}
+
+function getMiscData(){
+  
     
-    /*
+  /*
+    // 3d images
+    $('#gallerytitle').html('<h3>' + jsonObj.pageTextData[7].gallerytitle + '</h3>');
+    $('#gallerytext').html('<p>' + jsonObj.pageTextData[7].gallerytext + '</p>');
+
+    // cams
+    $('#camtitle').html('<h2>' + jsonObj.pageTextData[8].camtitle + '</h2>');
+    $('#camsubtitle').html('<h3>' + jsonObj.pageTextData[8].camsubtitle + '</h3>');
+    */
+}
+
+function getModelData(model){
+  /*
     // coke 
     $('#x3dtitle_coke').html('<h2>' + jsonObj.pageTextData[4].x3dtitle + '</h2>');
     $('#x3dmethod_coke').html('<p>' + jsonObj.pageTextData[4].x3dmethod + '</p>');
@@ -62,15 +83,4 @@ $(document).ready(function(){
     $('#title_pepper').html('<h2>' + jsonObj.pageTextData[6].title + '</h2>');
     $('#subtitle_pepper').html('<h3>' + jsonObj.pageTextData[6].subtitle + '</h3>');
     $('#text_pepper').html('<p>' + jsonObj.pageTextData[6].text + '</p>');
-    
-
-    // 3d images
-    $('#gallerytitle').html('<h3>' + jsonObj.pageTextData[7].gallerytitle + '</h3>');
-    $('#gallerytext').html('<p>' + jsonObj.pageTextData[7].gallerytext + '</p>');
-
-    // cams
-    $('#camtitle').html('<h2>' + jsonObj.pageTextData[8].camtitle + '</h2>');
-    $('#camsubtitle').html('<h3>' + jsonObj.pageTextData[8].camsubtitle + '</h3>');
-    */
-  });
-});
+}
