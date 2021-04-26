@@ -89,9 +89,9 @@
                             alt="Coca Cola">
                     </a>
                     <div class="card-body">
-                        <div id="title_cocacola"></div>
-                        <div id="subtitle_cocacola"></div>
-                        <div id="text_cocacola"></div>
+                        <div id="title_cocacola" class="card-title"></div>
+                        <div id="subtitle_cocacola" class="card-subtitle"></div>
+                        <div id="text_cocacola" class="card-text"></div>
                         <a href="https://www.coca-cola.co.uk/brands/coca-cola-original-taste" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
