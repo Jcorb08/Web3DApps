@@ -22,6 +22,7 @@ class Controller {
 		$this->load = new Load(); 
 		$this->model = new Model();
 		// determine what page you are on
+		// parameter passed if method has no parameter it is ignored
 		$this->$pageURI($parameter);
 	}
     // home page function
