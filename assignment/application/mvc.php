@@ -11,8 +11,8 @@ $pageURI =$_SERVER['REQUEST_URI'];
 $pageURI =substr($pageURI,strrpos($pageURI,'index.php')+10);
 $parameter =substr($pageURI,strrpos($pageURI, '('), -1);
 $pageURI = substr($pageURI,0, strrpos($pageURI,'('));
-echo $pageURI . " ";
-echo $parameter . " ";
+echo $pageURI . " uri ";
+echo $parameter . "  parra ";
 // can't find anything then it is homepage otherwise its a different page
 	if (!$pageURI)
 		new Controller('home');
