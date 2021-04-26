@@ -45,9 +45,9 @@ class Controller {
 		echo json_encode($data);
 	}
 
-	function getModelData(){
+	function getModelData($modelName){
 		// calls function dependant on model (parameter?)
-		$data = $this->model->
+		$data = $this->model->dbGetModelData($modelName);
 		echo json_encode($data);
 	}
 
