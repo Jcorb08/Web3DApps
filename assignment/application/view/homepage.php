@@ -205,7 +205,7 @@
                             <div class="model3D">
                             <x3d>
                                 <scene>
-                                    <inline url="Assets/x3d/coke.x3d"> </inline>
+                                    <inline url="assets/x3d/coke.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    
@@ -218,7 +218,7 @@
                             <div class="model3D">
                                 <x3d>
                                     <scene>
-                                        <inline url="Assets/x3d/sprite.x3d"> </inline>
+                                        <inline url="assets/x3d/sprite.x3d"> </inline>
                                     </scene>
                                 </x3d>
                             </div>                    
@@ -231,7 +231,7 @@
                             <div class="model3D">
                                 <x3d>
                                     <scene>
-                                        <inline url="Assets/x3d/pepper.x3d"> </inline>
+                                        <inline url="assets/x3d/pepper.x3d"> </inline>
                                     </scene>
                                 </x3d>
                             </div>                        
