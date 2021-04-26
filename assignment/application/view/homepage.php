@@ -88,7 +88,7 @@
                         <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/coca_cola.jpg"
                             alt="Coca Cola">
                     </a>
-                    <div class="card-body">
+                    <div class="card-body text-left">
                         <div id="title_cocacola"></div>
                         <div id="subtitle_cocacola"></div>
                         <div id="text_cocacola"></div>
