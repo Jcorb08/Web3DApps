@@ -196,7 +196,7 @@ class Model {
 				$result[$i]['Subtitle'] = $data['Subtitle'];
 				$result[$i]['Paragraph'] = $data['Paragraph'];
 				$result[$i]['Link'] = $data['Link'];
-				$result[$i]['Img'] = $data['img'];
+				$result[$i]['Img'] = $data['Img'];
 				//increment the row index
 				$i++;
 			}
