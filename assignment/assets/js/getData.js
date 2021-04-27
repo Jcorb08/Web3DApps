@@ -45,13 +45,21 @@ function getMiscData(){
   $.getJSON("index.php/getMiscData", function(jsonObj){
     console.log('miscData');
     console.log(jsonObj);
-    // 3d images
-    $('#gallerytitle').html('<h3>' + jsonObj.pageTextData[7].gallerytitle + '</h3>');
-    $('#gallerytext').html('<p>' + jsonObj.pageTextData[7].gallerytext + '</p>');
+    // gallery
+    $('#gallerytitle').html('<h3>' + jsonObj[0].gallerytitle + '</h3>');
+    $('#gallerytext').html('<p>' + jsonObj[0].gallerytext + '</p>');
 
     // cams
-    $('#camtitle').html('<h2>' + jsonObj.pageTextData[8].camtitle + '</h2>');
-    $('#camsubtitle').html('<h3>' + jsonObj.pageTextData[8].camsubtitle + '</h3>');
+    $('#camtitle').html('<h2>' + jsonObj[0].camtitle + '</h2>');
+    $('#camsubtitle').html('<h3>' + jsonObj[0].camsubtitle + '</h3>');
+
+    // animation
+    $('#animationtitle').html('<h2>' + jsonObj[0].animationtitle + '</h2>');
+    $('#animationtext').html('<h3>' + jsonObj[0].animationtext + '</h3>');
+
+    // render
+    $('#rendertitle').html('<h2>' + jsonObj[0].rendertitle + '</h2>');
+    $('#rendertext').html('<h3>' + jsonObj[0].rendertext + '</h3>');
   });
   
 }
