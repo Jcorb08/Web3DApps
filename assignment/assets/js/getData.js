@@ -59,7 +59,8 @@ function getMiscData(){
 
 function getModelData(model){
   console.log(model);
-  $.getJSON("index.php/getModelData(" + model + ")", function(jsonObj){
+  var url = "index.php/getModelData(" + model + ")";
+  $.getJSON(url, function(jsonObj){
     console.log('miscData');
     console.log(jsonObj);
     //x3d titles and description at the bottom

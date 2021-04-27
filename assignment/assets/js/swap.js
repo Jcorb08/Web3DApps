@@ -25,7 +25,7 @@ $(document).ready(function() {
 			$('#interaction').show(); 
 			$('#Description').show();
 			getMiscData();
-    	getModelData('coca cola');
+    	getModelData('Coca Cola');
 		});
 	}
 
