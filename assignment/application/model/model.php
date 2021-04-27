@@ -278,7 +278,7 @@ class Model {
 	public function dbGetModelData($modelName)
 	{
 		try{
-			$sql = 'SELECT * FROM Home WHERE Title = $modelName';
+			$sql = 'SELECT * FROM Home WHERE Title = "' + $modelName + '"';
 			// Prepare a statement to get all records from the Model_3D table
 			// Use PDO query() to query the database with the prepared SQL statement
 			// Set up an array to return the results to the view
@@ -292,7 +292,7 @@ class Model {
 					$result['ID'] = $data['ID'];
 			}
 			echo $result['ID'];
-			$sql = 'SELECT * FROM Models WHERE HomeID = $result["ID"]';
+			$sql = 'SELECT * FROM Models WHERE HomeID = "' + $result["ID"] + '"';
 			// Use PDO query() to query the database with the prepared SQL statement
 			$stmt = $this->dbhandle->query($sql);
 			
