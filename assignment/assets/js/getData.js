@@ -8,7 +8,7 @@ function getHomeData(){
   $.getJSON("index.php/getHomeData", function(jsonObj){
     // can see the object returned
     //var jsonObj = $.parseJSON(rawjson);
-    console.log("ajax");
+    console.log("homeData");
     console.log(jsonObj);
     // get home page text
     $('#title_home').html('<h2>' + jsonObj[0].Title + '</h2>');
@@ -36,9 +36,8 @@ function getHomeData(){
 
 function getMiscData(){
   $.getJSON("index.php/getMiscData", function(jsonObj){
-
-  });
-  /*
+    console.log('miscData');
+    console.log(jsonObj);
     // 3d images
     $('#gallerytitle').html('<h3>' + jsonObj.pageTextData[7].gallerytitle + '</h3>');
     $('#gallerytext').html('<p>' + jsonObj.pageTextData[7].gallerytext + '</p>');
@@ -46,11 +45,15 @@ function getMiscData(){
     // cams
     $('#camtitle').html('<h2>' + jsonObj.pageTextData[8].camtitle + '</h2>');
     $('#camsubtitle').html('<h3>' + jsonObj.pageTextData[8].camsubtitle + '</h3>');
-    */
+  });
+  
 }
 
 function getModelData(model){
   $.getJSON("index.php/getModelData(" + model + ")", function(jsonObj){
+    console.log('miscData');
+    console.log(jsonObj);
+    //x3d titles and description at the bottom
     $('#x3dtitle').html('<h2>' + jsonObj.pageTextData[4].x3dtitle + '</h2>');
     $('#x3dmethod').html('<p>' + jsonObj.pageTextData[4].x3dmethod + '</p>');
     $('#title_model').html('<h2>' + jsonObj.pageTextData[4].title + '</h2>');

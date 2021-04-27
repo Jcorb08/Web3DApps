@@ -151,13 +151,13 @@
                         </ul>
                     </div>
                     <div class="card-body">
-                        <div class="card-Title x3dCamera_Subtitle drinksText"></div>                            
+                        <div class="card-Title drinksText" id="cameratitle"></div>                            
                         <a href="#" class="btn btn-success btn-responsive" onclick="">Default</a>
                         <a href="#" class="btn btn-primary btn-responsive" onclick="">Back</a>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="">Left</a>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="">Right</a>
                         <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
-                        <div class="card-text x3dCameraDescription drinksText"></div>
+                        <div class="card-text drinksText" id="cameratext"></div>
                     </div>
                 </div>                
             </div>
@@ -172,12 +172,12 @@
                       </ul>
                     </div>
                     <div class="card-body">
-                      <div class="card-Title x3dAnimationSubtitle drinksText"></div>
+                      <div class="card-Title drinksText" id="animationtitle"></div>
                       <a href="#" class="btn btn-outline-light btn-responsive" onclick="">RotX</a>
                       <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
                       <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
                       <a href="#" class="btn btn-outline-dark btn-responsive" onclick="">Stop</a>
-                      <div class="card-text x3dAnimationDescription drinksText"></div>
+                      <div class="card-text drinksText" id="animationtext"></div>
                     </div>
                   </div>
             
@@ -208,12 +208,12 @@
                       </ul>
                     </div>
                     <div class="card-body">
-                      <div class="card-Title x3dRendersubtitle drinksText"></div>
+                      <div class="card-Title drinksText" id="rendertitle"></div>
                       <a href="#" class="btn btn-success btn-responsive">Poly</a>
                       <a href="#" class="btn btn-secondary btn-responsive" onclick="">Wire</a>
                       <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
                       <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
-                      <div class="card-text x3dRenderDescription drinksText"></div>
+                      <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
                     </div>
                 </div>
             </div>
@@ -224,7 +224,7 @@
             <div class="col-sm-12">
                 <div class="card text-left">
                     <div class="card-body">
-                        <div id="modelDescription" style="display: none;">
+                        <div id="modelDescription">
                             <div id="title_model" class="card-title"></div>
                             <div id="subtitle_model" class="card-subtitle"></div>
                             <div id="text_model" class="card-text"></div>
