@@ -110,7 +110,7 @@ class Model {
 	{
 		try{
 			foreach($dataIn as $value){
-				$stmt = $this->dbhandle->prepare("INSERT INTO Home (Title, Subtitle, Paragraph, Link) VALUES (?, ?, ?, ?, ?)");
+				$stmt = $this->dbhandle->prepare("INSERT INTO Home (Title, Subtitle, Paragraph, Link, Img) VALUES (?, ?, ?, ?, ?)");
 				$stmt->bindParam(1,$value['title']);
 				$stmt->bindParam(2,$value['subtitle']);
 				$stmt->bindParam(3,$value['paragraph']);
