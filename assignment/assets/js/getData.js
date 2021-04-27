@@ -3,9 +3,9 @@ $(document).ready(function(){
   // gathers home data using ajax request and inserts it into doc
   getHomeData();
 
-  $('navHome').click(function(){getHomeData();});
+  $('#navHome').click(function(){getHomeData();});
 
-  $('navModels').click(function(){
+  $('#navModels').click(function(){
     getMiscData();
     getModelData('coca cola');
   });
