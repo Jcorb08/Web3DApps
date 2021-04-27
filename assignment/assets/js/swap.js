@@ -9,9 +9,7 @@ $(document).ready(function() {
 		$('#about').hide();
 		$('#models').hide();
 		$('#interaction').hide();
-		$('#cokeDescription').hide();
-		$('#spriteDescription').hide(); 
-		$('#pepperDescription').hide(); 
+		$('#Description').hide();
 
 
 		$('#navHome').click(function(){
@@ -19,9 +17,7 @@ $(document).ready(function() {
 			$('#about').hide();
 			$('#models').hide();
 			$('#interaction').hide();
-			$('#cokeDescription').hide();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 	  
+			$('#Description').hide();	  
 		});
 
 		$('#navAbout').click(function(){
@@ -29,9 +25,7 @@ $(document).ready(function() {
 			$('#about').show();
 			$('#models').hide();
 			$('#interaction').hide();
-			$('#cokeDescription').hide();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 	  
+			$('#Description').hide(); 	  
 		});
 
 		$('#navModels').click(function(){
@@ -39,9 +33,7 @@ $(document).ready(function() {
 			$('#about').hide();
 			$('#models').show();
 			$('#interaction').show(); 
-			$('#cokeDescription').show();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 
+			$('#Description').show();
 		});
 	}
 

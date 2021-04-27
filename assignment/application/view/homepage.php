@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-item">
                         <a id="navModels" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
-                        title="About Web 3D Applications" data-content="X3d models for coke, sprite and dr.pepper">Models</a>
+                        title="About Web 3D Applications" data-content="X3d models of various brands">Models</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
@@ -151,17 +151,13 @@
                         </ul>
                     </div>
                     <div class="card-body">
-                        <div class="card-Title x3dCamera_Subtitle drinksText">
-                        <h3>Camera Views</h3>
-                        </div>                            
+                        <div class="card-Title x3dCamera_Subtitle drinksText"></div>                            
                         <a href="#" class="btn btn-success btn-responsive" onclick="">Default</a>
                         <a href="#" class="btn btn-primary btn-responsive" onclick="">Back</a>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="">Left</a>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="">Right</a>
                         <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
-                        <div class="card-text x3dCameraDescription drinksText">
-                        <p>These buttons select a limited range of X3D model viewpoints, use the dropdown menu for more camera views</p>
-                        </div>
+                        <div class="card-text x3dCameraDescription drinksText"></div>
                     </div>
                 </div>                
             </div>
@@ -176,16 +172,12 @@
                       </ul>
                     </div>
                     <div class="card-body">
-                      <div class="card-Title x3dAnimationSubtitle drinksText">
-                        <h3>Animation Options</h3>
-                      </div>
+                      <div class="card-Title x3dAnimationSubtitle drinksText"></div>
                       <a href="#" class="btn btn-outline-light btn-responsive" onclick="">RotX</a>
                       <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
                       <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
                       <a href="#" class="btn btn-outline-dark btn-responsive" onclick="">Stop</a>
-                      <div class="card-text x3dAnimationDescription drinksText">
-                          <p>These buttons select a range of X3D animation options</p>
-                      </div>
+                      <div class="card-text x3dAnimationDescription drinksText"></div>
                     </div>
                   </div>
             
@@ -216,18 +208,14 @@
                       </ul>
                     </div>
                     <div class="card-body">
-                      <div class="card-Title x3dRendersubtitle drinksText">
-                        <h3>Render and Lighting Options</h3>
-                      </div>
+                      <div class="card-Title x3dRendersubtitle drinksText"></div>
                       <a href="#" class="btn btn-success btn-responsive">Poly</a>
                       <a href="#" class="btn btn-secondary btn-responsive" onclick="">Wire</a>
                       <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
                       <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
-                      <div class="card-text x3dRenderDescription drinksText">
-                          <p>These buttons select a limited number of render and lighting options; use the dropdown menus for more options</p>
-                      </div>
+                      <div class="card-text x3dRenderDescription drinksText"></div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
