@@ -46,20 +46,20 @@ function getMiscData(){
     console.log('miscData');
     console.log(jsonObj);
     // gallery
-    $('#gallerytitle').html('<h3>' + jsonObj[0].gallerytitle + '</h3>');
-    $('#gallerytext').html('<p>' + jsonObj[0].gallerytext + '</p>');
+    $('#gallerytitle').html('<h3>' + jsonObj[0].GalleryTitle + '</h3>');
+    $('#gallerytext').html('<p>' + jsonObj[0].GalleryText + '</p>');
 
     // cams
-    $('#camtitle').html('<h2>' + jsonObj[0].camtitle + '</h2>');
-    $('#camsubtitle').html('<h3>' + jsonObj[0].camsubtitle + '</h3>');
+    $('#cameratitle').html('<h2>' + jsonObj[0].CameraTitle + '</h2>');
+    $('#cameratext').html('<h3>' + jsonObj[0].CameraText + '</h3>');
 
     // animation
-    $('#animationtitle').html('<h2>' + jsonObj[0].animationtitle + '</h2>');
-    $('#animationtext').html('<h3>' + jsonObj[0].animationtext + '</h3>');
+    $('#animationtitle').html('<h2>' + jsonObj[0].AnimationTitle + '</h2>');
+    $('#animationtext').html('<h3>' + jsonObj[0].AnimationText + '</h3>');
 
     // render
-    $('#rendertitle').html('<h2>' + jsonObj[0].rendertitle + '</h2>');
-    $('#rendertext').html('<h3>' + jsonObj[0].rendertext + '</h3>');
+    $('#rendertitle').html('<h2>' + jsonObj[0].RenderTitle + '</h2>');
+    $('#rendertext').html('<h3>' + jsonObj[0].RenderText + '</h3>');
   });
   
 }
