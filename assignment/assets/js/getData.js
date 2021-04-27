@@ -17,6 +17,7 @@ function getHomeData(){
 
     var cardhtml = "";
 
+    // adds the html needed for each card on home page
     for(i = 1; i<jsonObj.length;i++){
       cardhtml += '<div class="col-xs-12 col-sm-4 col-xl-3">';
       cardhtml += '<div class="card">';
