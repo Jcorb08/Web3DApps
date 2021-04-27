@@ -61,14 +61,14 @@ function getModelData(model){
   console.log(model);
   var url = "index.php/getModelData(" + model + ")";
   $.getJSON(url, function(jsonObj){
-    console.log('miscData');
+    console.log('modelData');
     console.log(jsonObj);
     //x3d titles and description at the bottom
-    $('#x3dtitle').html('<h2>' + jsonObj.pageTextData[4].x3dtitle + '</h2>');
-    $('#x3dmethod').html('<p>' + jsonObj.pageTextData[4].x3dmethod + '</p>');
-    $('#title_model').html('<h2>' + jsonObj.pageTextData[4].title + '</h2>');
-    $('#subtitle_model').html('<h3>' + jsonObj.pageTextData[4].subtitle + '</h3>');
-    $('#text_model').html('<p>' + jsonObj.pageTextData[4].text + '</p>');
-    $('#button_model').attr('href', jsonObj[5].link);
+    $('#x3dtitle').html('<h2>' + jsonObj.x3dTitle + '</h2>');
+    $('#x3dmethod').html('<p>' + jsonObj.x3dMethod + '</p>');
+    $('#title_model').html('<h2>' + jsonObj.Title + '</h2>');
+    $('#subtitle_model').html('<h3>' + jsonObj.Subtitle + '</h3>');
+    $('#text_model').html('<p>' + jsonObj.Paragraph + '</p>');
+    $('#button_model').attr('href', jsonObj.Link);
   });
 }
