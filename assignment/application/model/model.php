@@ -291,6 +291,7 @@ class Model {
 					$result['Link']= $data['Link'];
 					$result['ID'] = $data['ID'];
 			}
+			echo $result['ID'];
 			$sql = 'SELECT * FROM Models WHERE HomeID = $result["ID"]';
 			// Use PDO query() to query the database with the prepared SQL statement
 			$stmt = $this->dbhandle->query($sql);
