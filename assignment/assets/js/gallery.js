@@ -21,7 +21,7 @@ $(document).ready(function() {
       //alert(response);
       //loop response array
       for(var i=0;i<response.length;i++){
-        htmlCode += '<a href="assets/images/gallery' + response[i] + ' ">';
+        htmlCode += '<a href="assets/images/gallery' + response[i] + ' data-fancybox data-caption="Rendering of X3D model">';
         htmlCode += '<img class="card-img-top img-thumbnail" src="assets/images/gallery' + response[i] + '"/>';
         htmlCode += '</a>';
       }
