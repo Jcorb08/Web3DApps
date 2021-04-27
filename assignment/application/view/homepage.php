@@ -56,7 +56,7 @@
                     </li>
                     <li class="nav-item">
                         <a id="navModels" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
-                        title="About Web 3D Applications" data-content="X3d models of various brands">Models</a>
+                        title="X3D Models" data-content="X3d models of various brands">Models</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Contact</a>
@@ -110,7 +110,7 @@
                             <div class="model3D">
                             <x3d>
                                 <scene>
-                                    <inline url="assets/models/x3d/coke.x3d"> </inline>
+                                    <inline url="assets/models/x3d/coca cola.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    

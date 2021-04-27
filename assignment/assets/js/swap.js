@@ -6,7 +6,6 @@ $(document).ready(function() {
 	function selectPage() {
 
 		$('#home').show();
-		$('#about').hide();
 		$('#models').hide();
 		$('#interaction').hide();
 		$('#Description').hide();
@@ -14,23 +13,13 @@ $(document).ready(function() {
 
 		$('#navHome').click(function(){
 			$('#home').show();
-			$('#about').hide();
 			$('#models').hide();
 			$('#interaction').hide();
 			$('#Description').hide();	  
 		});
 
-		$('#navAbout').click(function(){
-			$('#home').hide();
-			$('#about').show();
-			$('#models').hide();
-			$('#interaction').hide();
-			$('#Description').hide(); 	  
-		});
-
 		$('#navModels').click(function(){
 			$('#home').hide();
-			$('#about').hide();
 			$('#models').show();
 			$('#interaction').show(); 
 			$('#Description').show();
