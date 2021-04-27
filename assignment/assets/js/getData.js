@@ -51,15 +51,15 @@ function getMiscData(){
 
     // cams
     $('#cameratitle').html('<h2>' + jsonObj[0].CameraTitle + '</h2>');
-    $('#cameratext').html('<h3>' + jsonObj[0].CameraText + '</h3>');
+    $('#cameratext').html('<p>' + jsonObj[0].CameraText + '</p>');
 
     // animation
     $('#animationtitle').html('<h2>' + jsonObj[0].AnimationTitle + '</h2>');
-    $('#animationtext').html('<h3>' + jsonObj[0].AnimationText + '</h3>');
+    $('#animationtext').html('<p>' + jsonObj[0].AnimationText + '</p>');
 
     // render
     $('#rendertitle').html('<h2>' + jsonObj[0].RenderTitle + '</h2>');
-    $('#rendertext').html('<h3>' + jsonObj[0].RenderText + '</h3>');
+    $('#rendertext').html('<p>' + jsonObj[0].RenderText + '</p>');
   });
   
 }
