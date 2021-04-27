@@ -232,7 +232,7 @@
         </div>
 
         <!--Descriptions-->
-        <div id="row">
+        <div id="Description" style="display: none;">
             <div class="col-sm-12">
                 <div class="card text-left">
                     <div class="card-body">
