@@ -236,7 +236,7 @@
             <div class="col-sm-12">
                 <div class="card text-left">
                     <div class="card-body">
-                        <div id="modelDescription">
+                        <div id="modelDescription" style="display: none;">
                             <div id="title_model" class="card-title"></div>
                             <div id="subtitle_model" class="card-subtitle"></div>
                             <div id="text_model" class="card-text"></div>
