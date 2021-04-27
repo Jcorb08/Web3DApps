@@ -92,13 +92,22 @@
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#" id="navCoke">Coke</a>
+                                <a class="nav-link active" href="#" id="navCoke">Coca Cola</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" id="navSprite">Sprite</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" id="navPepper">Dr.Pepper</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navLilt">Lilt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navOasis">Oasis</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" id="navCosta">Costa Coffee</a>
                             </li>
                         </ul>
                     </div>
@@ -110,7 +119,7 @@
                             <div class="model3D">
                             <x3d>
                                 <scene>
-                                    <inline url="assets/models/x3d/coca cola.x3d"> </inline>
+                                    <inline id="x3dmodel" url="assets/models/x3d/coca cola.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    

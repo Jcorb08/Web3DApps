@@ -2,13 +2,6 @@ $(document).ready(function(){
   $('[data-toggle="popover"]').popover(); 
   // gathers home data using ajax request and inserts it into doc
   getHomeData();
-
-  $('#navHome').click(function(){getHomeData();});
-
-  $('#navModels').click(function(){
-    getMiscData();
-    getModelData('coca cola');
-  });
 });
 
 function getHomeData(){
@@ -65,6 +58,7 @@ function getMiscData(){
 }
 
 function getModelData(model){
+  console.log(model);
   $.getJSON("index.php/getModelData(" + model + ")", function(jsonObj){
     console.log('miscData');
     console.log(jsonObj);

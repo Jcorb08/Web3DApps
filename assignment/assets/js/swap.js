@@ -15,7 +15,8 @@ $(document).ready(function() {
 			$('#home').show();
 			$('#models').hide();
 			$('#interaction').hide();
-			$('#Description').hide();	  
+			$('#Description').hide();
+			getHomeData();	  
 		});
 
 		$('#navModels').click(function(){
@@ -23,39 +24,40 @@ $(document).ready(function() {
 			$('#models').show();
 			$('#interaction').show(); 
 			$('#Description').show();
+			getMiscData();
+    	getModelData('coca cola');
 		});
 	}
 
 	function selectModel() {
-
 		$('#navCoke').click(function(){
-			$('#coke').show();
-			$('#sprite').hide();
-			$('#pepper').hide();
-			$('#interaction').show(); 
-			$('#cokeDescription').show();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').hide(); 
+			getModelData('Coca Cola');
+			$('#x3dmodel').attr('url','assets/models/x3d/coca cola.x3d');
 		});
 
 		$('#navSprite').click(function(){
-			$('#coke').hide();
-			$('#sprite').show();
-			$('#pepper').hide();
-			$('#interaction').show(); 
-			$('#cokeDescription').hide();
-			$('#spriteDescription').show();
-			$('#pepperDescription').hide();  	  	  
+			getModelData('Sprite');
+			$('#x3dmodel').attr('url','assets/models/x3d/sprite.x3d');
 		});
 
 		$('#navPepper').click(function(){
-			$('#coke').hide();
-			$('#sprite').hide();
-			$('#pepper').show();
-			$('#interaction').show(); 
-			$('#cokeDescription').hide();
-			$('#spriteDescription').hide(); 
-			$('#pepperDescription').show(); 	   
+			getModelData('Dr.Pepper');
+			$('#x3dmodel').attr('url','assets/models/x3d/pepper.x3d');
+		});
+
+		$('#navLilt').click(function(){
+			getModelData('Lilt');
+			$('#x3dmodel').attr('url','assets/models/x3d/lilt.x3d');
+		});
+		
+		$('#navOasis').click(function(){
+			getModelData('Oasis');
+			$('#x3dmodel').attr('url','assets/models/x3d/oasis.x3d');
+		});
+		
+		$('#navCosta').click(function(){
+			getModelData('Costa Coffee');
+			$('#x3dmodel').attr('url','assets/models/x3d/costa coffee.x3d');
 		});
 	}
 
