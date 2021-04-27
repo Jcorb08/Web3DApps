@@ -286,14 +286,14 @@ class Model {
 			$result = null;
 			$stmt = $this->dbhandle->query($sql);
 			if ($data = $stmt->fetch()){
-					$result['Title'] = $data['Title'];
-					$result['Subtitle'] = $data['Subtitle'];
-					$result['Paragraph'] = $data['Paragraph'];
-					$result['Link']= $data['Link'];
-					$result['ID'] = $data['ID'];
+					$result[0]['Title'] = $data['Title'];
+					$result[0]['Subtitle'] = $data['Subtitle'];
+					$result[0]['Paragraph'] = $data['Paragraph'];
+					$result[0]['Link']= $data['Link'];
+					$result[0]['ID'] = $data['ID'];
 			}
 			echo $result['ID'];
-			$sql = 'SELECT * FROM Models WHERE HomeID = "' . $result["ID"] . '"';
+			$sql = 'SELECT * FROM Models WHERE HomeID = "' . $result[0]["ID"] . '"';
 			// Use PDO query() to query the database with the prepared SQL statement
 			$stmt = $this->dbhandle->query($sql);
 			
@@ -301,8 +301,8 @@ class Model {
 			// Use a while loop to loop through the rows	
 			if ($data = $stmt->fetch()){
 				// Write the database conetnts to the results array for sending back to the view
-				$result['x3dTitle'] = $data['x3dTitle'];
-				$result['x3dMethod'] = $data['x3dMethod'];
+				$result[0]['x3dTitle'] = $data['x3dTitle'];
+				$result[0]['x3dMethod'] = $data['x3dMethod'];
 			}
 		}
 		catch (PD0EXception $e) {
