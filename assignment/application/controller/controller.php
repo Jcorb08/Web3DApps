@@ -48,7 +48,7 @@ class Controller {
 
 	function getModelData($modelName){
 		//echo "model name " . $modelName;
-		// calls function dependant on model (parameter?)
+		// calls function dependant on model
 		$data = $this->model->dbGetModelData($modelName);
 		echo json_encode($data);
 	}

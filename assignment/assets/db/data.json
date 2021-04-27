@@ -3,37 +3,51 @@
     {
       "title": "Coca Cola Great Britain",
       "subtitle": "Founded by Dr John S Pemberton",
-      "paragraph": "The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands."
+      "paragraph": "The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.",
+      "link": "https://www.coca-cola.co.uk/",
+      "img": "assets/images/main/main.png"
     },
     {
       "title": "Coca Cola",
       "subtitle": "New York Harbour 1886",
-      "paragraph": "It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass."
+      "paragraph": "It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled. Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.",
+      "link": "https://www.coca-cola.co.uk/brands/coca-cola-original-taste",
+      "img": "assets/images/coca_cola.jpg"
     },
     {
       "title": "Sprite",
       "subtitle": "West Germany, 1959",
-      "paragraph": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories."
+      "paragraph": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.",
+      "link": "https://www.coca-cola.co.uk/brands/sprite",
+      "img": "assets/images/sprite.jpg"
     },
     {
       "title": "Dr.Pepper",
       "subtitle": "Texas, 1885",
-      "paragraph": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since."
+      "paragraph": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on. It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since.",
+      "link": "https://www.coca-cola.co.uk/brands/dr-pepper",
+      "img": "assets/images/dr_pepper.jpg"
     },
     {
       "title": "Lilt",
       "subtitle": "Pineapple and Grapefruit, 1975",
-      "paragraph": "Lilt is a brand of soft drink manufactured by The Coca-Cola Company and sold in the United Kingdom, Ireland, Gibraltar, and the Seychelles only. During the 1970s, 1980s, 1990s and 2010s Lilt was promoted with the advertising slogan, 'the totally tropical taste.' Between 2008 and 2014, The Coca-Cola Company reduced the number of calories in the drink by 56% as part of its efforts to make healthier products in response to the British Government's Public Health Responsibility Deal.[2] The amount of sugar was also reduced alongside the addition of artificial sweeteners (aspartame, acesulfame K and saccharin)."
+      "paragraph": "Lilt is a brand of soft drink manufactured by The Coca-Cola Company and sold in the United Kingdom, Ireland, Gibraltar, and the Seychelles only. During the 1970s, 1980s, 1990s and 2010s Lilt was promoted with the advertising slogan, 'the totally tropical taste.' Between 2008 and 2014, The Coca-Cola Company reduced the number of calories in the drink by 56% as part of its efforts to make healthier products in response to the British Government's Public Health Responsibility Deal.[2] The amount of sugar was also reduced alongside the addition of artificial sweeteners (aspartame, acesulfame K and saccharin).",
+      "link": "https://www.coca-cola.co.uk/brands/lilt",
+      "img": "assets/images/lilt.png"
     },
     {
       "title": "Oasis",
       "subtitle": "Be Fruit, 1966",
-      "paragraph": "Oasis is a non-carbonated bottled soft drink, a product of Orangina Schweppes. In the UK it is manufactured by the Coca-Cola Enterprises in conjunction with Coca-Cola Company subsidiary Atlantic Industries and in the Republic of Ireland it is distributed by Coca-Cola HBC Ireland. It originated in France by Volvic in 1966 and initially distributed under the name 'Pulse', until flagging sales led to a rebrand and its current name 'Oasis' being introduced. The drink is described as a 'fruit juice drink - with sugar and sweeteners'. "
+      "paragraph": "Oasis is a non-carbonated bottled soft drink, a product of Orangina Schweppes. In the UK it is manufactured by the Coca-Cola Enterprises in conjunction with Coca-Cola Company subsidiary Atlantic Industries and in the Republic of Ireland it is distributed by Coca-Cola HBC Ireland. It originated in France by Volvic in 1966 and initially distributed under the name 'Pulse', until flagging sales led to a rebrand and its current name 'Oasis' being introduced. The drink is described as a 'fruit juice drink - with sugar and sweeteners'.",
+      "link": "https://www.coca-cola.co.uk/brands/oasis",
+      "img": "assets/images/oasis.jpg"
     },
     {
       "title": "Costa Coffee",
       "subtitle": "Headquarters: Dunstable, England",
-      "paragraph": "Costa Coffee was founded in London in 1971 by two brothers Bruno and Sergio Costa as a wholesale operation supplying roasted coffee to caterers and specialist Italian coffee shops. Acquired by Whitbread in 1995, it was sold in 2019 to The Coca-Cola Company in a deal worth £3.9bn, and has grown to 3,401 stores across 31 countries and 18,412 employees. The business has 2,121 UK restaurants, over 6,000 Costa Express vending facilities and a further 1,280 outlets overseas (460 in China)."
+      "paragraph": "Costa Coffee was founded in London in 1971 by two brothers Bruno and Sergio Costa as a wholesale operation supplying roasted coffee to caterers and specialist Italian coffee shops. Acquired by Whitbread in 1995, it was sold in 2019 to The Coca-Cola Company in a deal worth £3.9bn, and has grown to 3,401 stores across 31 countries and 18,412 employees. The business has 2,121 UK restaurants, over 6,000 Costa Express vending facilities and a further 1,280 outlets overseas (460 in China).",
+      "link": "https://www.coca-cola.co.uk/brands/costa-coffee",
+      "img": "assets/images/costa.png"
     }
   ],
  "Models": [

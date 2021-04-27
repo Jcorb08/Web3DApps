@@ -80,102 +80,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!-- Coke -->
-            <div class="col-xs-12 col-sm-4 col-xl-3">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/coca_cola.jpg"
-                            alt="Coca Cola">
-                    </a>
-                    <div class="card-body">
-                        <div id="title_cocacola" class="card-title"></div>
-                        <div id="subtitle_cocacola" class="card-subtitle"></div>
-                        <div id="text_cocacola" class="card-text"></div>
-                        <a href="https://www.coca-cola.co.uk/brands/coca-cola-original-taste" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-            </div>
-            <!--Sprite-->
-            <div class="col-xs-12 col-sm-4 col-xl-3">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/sprite.jpg" alt="Sprite">
-                    </a>
-                    <div class="card-body">
-                        <div id="title_sprite"></div>
-                        <div id="subtitle_sprite"></div>
-                        <div id="text_sprite"></div>
-                        <a href="https://www.coca-cola.co.uk/brands/sprite" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-            </div>
-            <!--Dr pepper-->
-            <div class="col-xs-12 col-sm-4 col-xl-3">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/dr_pepper.jpg"
-                            alt="Dr Pepper">
-                    </a>
-                    <div class="card-body">
-                        <div id="title_drpepper"></div>
-                        <div id="subtitle_drpepper"></div>
-                        <div id="text_drpepper"></div>
-                        <a href="https://www.coca-cola.co.uk/brands/dr-pepper" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--Lilt-->
-            <div class="col-xs-12 col-sm-4 col-xl-3">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/lilt.png"
-                            alt="Lilt">
-                    </a>
-                    <div class="card-body">
-                        <div id="title_lilt"></div>
-                        <div id="subtitle_lilt"></div>
-                        <div id="text_lilt"></div>
-                        <a href="https://www.coca-cola.co.uk/brands/lilt" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--Oasis-->
-            <div class="col-xs-12 col-sm-4 col-xl-3">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/oasis.jpg"
-                            alt="Oasis">
-                    </a>
-                    <div class="card-body">
-                        <div id="title_oasis"></div>
-                        <div id="subtitle_oasis"></div>
-                        <div id="text_oasis"></div>
-                        <a href="https://www.coca-cola.co.uk/brands/oasis" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-
-            </div>
-            <!--Costa-->
-            <div class="col-xs-12 col-sm-4 col-xl-3">
-                <div class="card">
-                    <a href="#">
-                        <img class="card-img-top img-fluid text-center img-thumbnail" src="assets/images/costa.png"
-                            alt="Costa">
-                    </a>
-                    <div class="card-body">
-                        <div id="title_costa"></div>
-                        <div id="subtitle_costa"></div>
-                        <div id="text_costa"></div>
-                        <a href="https://www.coca-cola.co.uk/brands/costa-coffee" class="btn btn-primary">Find out more ...</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
+        <div class="row" id="cards_home"></div>
     </div>    
 
     <!-- Models Page-->
@@ -198,44 +103,19 @@
                         </ul>
                     </div>
                     <div class="card-body">
-                        <div id="coke">
-                            <div id="x3dtitle_coke" class="card-title"></div>
+                        <div id="x3d">
+                            <div id="x3dtitle" class="card-title"></div>
                             <!--X3D CODE GOES HERE-->
                             <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
                             <div class="model3D">
                             <x3d>
                                 <scene>
-                                    <inline url="assets/x3d/coke.x3d"> </inline>
+                                    <inline url="assets/models/x3d/coke.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    
-                            <div id="x3dmethod_coke" class="card-text"></div>
+                            <div id="x3dmethod" class="card-text"></div>
                         </div>
-                        <div id="sprite" style="display: none;">
-                            <div id="x3dtitle_sprite" class="card-title"></div>
-                            <!--X3D CODE GOES HERE-->
-                            <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
-                            <div class="model3D">
-                                <x3d>
-                                    <scene>
-                                        <inline url="assets/x3d/sprite.x3d"> </inline>
-                                    </scene>
-                                </x3d>
-                            </div>                    
-                            <div id="x3dmethod_sprite" class="card-text"></div>
-                        </div>
-                        <div id="pepper" style="display: none;">
-                            <div id="x3dtitle_pepper" class="card-title"></div>
-                            <!--X3D CODE GOES HERE-->
-                            <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
-                            <div class="model3D">
-                                <x3d>
-                                    <scene>
-                                        <inline url="assets/x3d/pepper.x3d"> </inline>
-                                    </scene>
-                                </x3d>
-                            </div>                        
-                            <div id="x3dmethod_pepper" class="card-text"></div>
                         </div>
                     </div>
                 </div>
@@ -356,22 +236,13 @@
             <div class="col-sm-12">
                 <div class="card text-left">
                     <div class="card-body">
-                        <div id="cokeDescription">
-                            <div id="title_coke" class="card-title"></div>
-                            <div id="subtitle_coke" class="card-subtitle"></div>
-                            <div id="text_coke" class="card-text"></div>
+                        <div id="modelDescription">
+                            <div id="title_model" class="card-title"></div>
+                            <div id="subtitle_model" class="card-subtitle"></div>
+                            <div id="text_model" class="card-text"></div>
                         </div>
-                        <div id="spriteDescription" style="display: none;">
-                            <div id="title_sprite" class="card-title"></div>
-                            <div id="subtitle_sprite" class="card-subtitle"></div>
-                            <div id="text_sprite" class="card-text"></div>
                         </div>
-                        <div id="pepperDescription" style="display: none;">
-                            <div id="title_pepper" class="card-title"></div>
-                            <div id="subtitle_pepper" class="card-subtitle"></div>
-                            <div id="text_pepper" class="card-text"></div>S
-                        </div>
-                        <a href="#" class="btn btn-primary">Find out more ...</a>
+                        <a id="button_model" href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
             </div>

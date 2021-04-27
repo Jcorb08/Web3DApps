@@ -42,6 +42,8 @@ class Model {
 									"Title	TEXT NOT NULL UNIQUE, " .
 									"Subtitle	TEXT NOT NULL, " .
 									"Paragraph	TEXT NOT NULL, " . 
+									"Link	TEXT NOT NULL, " . 
+									"Img TEXT NOT NULL, " .
 									"PRIMARY KEY('ID' AUTOINCREMENT) );");
 			return "Home table is successfully created inside data.db file";
 		}
@@ -108,10 +110,12 @@ class Model {
 	{
 		try{
 			foreach($dataIn as $value){
-				$stmt = $this->dbhandle->prepare("INSERT INTO Home (Title, Subtitle, Paragraph) VALUES (?, ?, ?)");
+				$stmt = $this->dbhandle->prepare("INSERT INTO Home (Title, Subtitle, Paragraph, Link) VALUES (?, ?, ?, ?, ?)");
 				$stmt->bindParam(1,$value['title']);
 				$stmt->bindParam(2,$value['subtitle']);
 				$stmt->bindParam(3,$value['paragraph']);
+				$stmt->bindParam(4,$value['link']);
+				$stmt->bindParam(5,$value['img']);
 				$stmt->execute();		
 			}
 			return "Home data inserted successfully inside test1.db";
@@ -191,6 +195,8 @@ class Model {
 				$result[$i]['Title'] = $data['Title'];
 				$result[$i]['Subtitle'] = $data['Subtitle'];
 				$result[$i]['Paragraph'] = $data['Paragraph'];
+				$result[$i]['Link'] = $data['Link'];
+				$result[$i]['Img'] = $data['img'];
 				//increment the row index
 				$i++;
 			}
@@ -272,23 +278,29 @@ class Model {
 	public function dbGetModelData($modelName)
 	{
 		try{
+			$sql = 'SELECT * FROM Home WHERE Title = $modelName';
 			// Prepare a statement to get all records from the Model_3D table
-			$sql = 'SELECT * FROM Models WHERE ';
 			// Use PDO query() to query the database with the prepared SQL statement
-			$stmt = $this->dbhandle->query($sql);
 			// Set up an array to return the results to the view
 			$result = null;
-			// Set up a variable to index each row of the array
-			$i=-0;
+			$stmt = $this->dbhandle->query($sql);
+			if ($data = $stmt->fetch()){
+					$result['Title'] = $data['Title'];
+					$result['Subtitle'] = $data['Subtitle'];
+					$result['Paragraph'] = $data['Paragraph'];
+					$result['Link']= $data['Link'];
+					$result['ID'] = $data['ID'];
+			}
+			$sql = 'SELECT * FROM Models WHERE HomeID = $result["ID"]';
+			// Use PDO query() to query the database with the prepared SQL statement
+			$stmt = $this->dbhandle->query($sql);
+			
 			// Use PDO fetch() to retrieve the results from the database using a while loop
 			// Use a while loop to loop through the rows	
-			while ($data = $stmt->fetch()) {
+			if ($data = $stmt->fetch()){
 				// Write the database conetnts to the results array for sending back to the view
-				$result[$i]['x3dTitle'] = $data['x3dTitle'];
-				$result[$i]['x3dMethod'] = $data['x3dMethod'];
-				$result[$i]['HomeID'] = $data['HomeID'];
-				//increment the row index
-				$i++;
+				$result['x3dTitle'] = $data['x3dTitle'];
+				$result['x3dMethod'] = $data['x3dMethod'];
 			}
 		}
 		catch (PD0EXception $e) {
