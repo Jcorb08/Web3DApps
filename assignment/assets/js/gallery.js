@@ -21,8 +21,8 @@ $(document).ready(function() {
       //alert(response);
       //loop response array
       for(var i=0;i<response.length;i++){
-        htmlCode += '<a href="Assets/images/gallery' + response[i] + ' ">';
-        htmlCode += '<img class="card-img-top img-thumbnail" src="Assets/images/gallery' + response[i] + '"/>';
+        htmlCode += '<a href="assets/images/gallery' + response[i] + ' ">';
+        htmlCode += '<img class="card-img-top img-thumbnail" src="assets/images/gallery' + response[i] + '"/>';
         htmlCode += '</a>';
       }
       document.getElementById('gallery').innerHTML = htmlCode;
