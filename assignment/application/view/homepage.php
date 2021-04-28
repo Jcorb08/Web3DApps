@@ -87,7 +87,7 @@
     </div>    
 
     <!-- Models Page-->
-    <div id="models" class="container-fluid main_contents" style="display: none;">
+    <div id="models" class="container-fluid main_contents">
         <div class="row">
             <div class="col-sm-8">
                 <!--X3D models-->
@@ -234,13 +234,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12" id="pics">
-            <!--gallery-->
-            <div class="card text-left">
-                <div id="gallerytitle" class="card-header gallery-header"></div>
-                <div class="card-body">
-                    <div class="gallery" id="gallery"></div>
-                    <div id="gallerytext" class="card-text drinksText"></div>
+        <div class="row" id="pics">
+            <div class="col-sm-12">
+                <!--gallery-->
+                <div class="card text-left">
+                    <div id="gallerytitle" class="card-header gallery-header"></div>
+                    <div class="card-body">
+                        <div class="gallery" id="gallery"></div>
+                        <div id="gallerytext" class="card-text drinksText"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,25 +265,25 @@
     <!--Modal here because backdrop messed up if in div container-->
     <div class="modal fade" id="contactModal" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
+            <div class="modal-content">
           
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">3D App Contact Details</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">3D App Contact Details</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                198735 Email: nobody@sussex.ac.uk
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
             
-            <!-- Modal body -->
-            <div class="modal-body">
-              198735 Email: nobody@sussex.ac.uk
             </div>
-            
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-            
-          </div>
         </div>
     </div>
 
@@ -304,10 +306,4 @@
     <!--Model animations-->
     <script src="assets/js/model.js"></script>
 </body>
-
-</html>
-
-
-
-
 </html>
