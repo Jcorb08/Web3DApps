@@ -148,7 +148,7 @@
             </div>
         </div>
         <div class="row" id="interaction">
-            <div id="col-sm-4">
+            <div class="col-sm-4">
                 <!--Cam views--> 
                 <div class="card text-left">
                     <div class="card-header">
@@ -178,7 +178,7 @@
                     </div>
                 </div>    
             </div>            
-            <div id="col-sm-4">
+            <div class="col-sm-4">
                 <!--animations-->
                 <div class="card text-left">
                     <div class="card-header">
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div id="col-sm-4">
+            <div class="col-sm-4">
                 <!--render type + lighting-->
                 <div class="card text-left">
                     <div class="card-header">
