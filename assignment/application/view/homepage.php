@@ -120,7 +120,7 @@
                             <!--X3D CODE GOES HERE-->
                             <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
                             <div class="model3D">
-                            <x3d>
+                            <x3d id = "model">
                                 <scene>
                                     <inline id="x3dmodel" url="assets/models/x3d/coca cola.x3d"> </inline>
                                 </scene>
@@ -222,7 +222,7 @@
                     <div class="card-body">
                       <div class="card-Title drinksText" id="rendertitle"></div>
                       <a href="#" class="btn btn-success btn-responsive">Poly</a>
-                      <a href="#" class="btn btn-secondary btn-responsive" onclick="">Wire</a>
+                      <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
                       <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
                       <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
                       <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>

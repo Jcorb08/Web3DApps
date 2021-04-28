@@ -15,5 +15,12 @@ function animateModel(){
   }
 }
 
+function wireframe(){
+	var e = document.getElementById("model");
+	e.runtime.togglePoints(true);
+	e.runtime.togglePoints(true);
+}
+
+
 // goes in X3D file
 // <timeSensor DEF="RotationTimer" cycleInterval="4" loop="true" enabled="false"></timeSensor>
