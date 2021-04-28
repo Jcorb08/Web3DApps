@@ -146,7 +146,7 @@
                 </div>
             </div>
     </div>
-    <div class="row" id="interaction">
+    <div class="container-fluid" id="interaction">
         <div class="col-sm-4">
             <!--Cam views--> 
             <div class="card text-left">
@@ -233,7 +233,7 @@
             </div>
         </div>
     </div>
-    <div class="row" id="pics">
+    <div class="container-fluid" id="pics">
         <div class="col-sm-12">
             <!--gallery-->
             <div class="card text-left">
