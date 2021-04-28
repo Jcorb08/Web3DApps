@@ -87,8 +87,8 @@
     </div>    
 
     <!-- Models Page-->
-    <div class="container-fluid main_contents">
-        <div class="row" id="models">
+    <div id="models" class="container-fluid main_contents">
+        <div class="row">
             <div class="col-sm-8">
                 <!--X3D models-->
                 <div class="card text-left">
