@@ -31,11 +31,3 @@ X3D, x3d {
     height: 100%
 }
 
-.card-columns .card {
-    border: 1px solid rgba(0,0,0,.125);
-    /* border-radius: .25rem;*/
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgba(182, 231, 243, 1.0);
-    display: inline-block;
-}
