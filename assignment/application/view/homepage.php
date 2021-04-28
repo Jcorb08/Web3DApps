@@ -88,7 +88,7 @@
 
     <!-- Models Page-->
     <div id="models" class="container-fluid main_contents" style="display: none;">
-        <div class="card-columns">
+        <div class="col-sm-8">
             <!--X3D models-->
             <div class="card text-left">
                 <div class="card-header">
@@ -130,8 +130,24 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="col-sm-4">
+            <!--Descriptions-->
+            <div class="card text-left">
+                <div class="card-body">
+                    <div id="modelDescription">
+                        <div id="title_model" class="card-title"></div>
+                        <div id="subtitle_model" class="card-subtitle"></div>
+                        <div id="text_model" class="card-text"></div>
+                    </div>
+                    </div>
+                    <a id="button_model" href="#" class="btn btn-primary">Find out more ...</a>
+                </div>
+            </div>
+        </div>
+        <div id="col-sm-4">
             <!--Cam views--> 
-            <div class="card p-3 text-left">
+            <div class="card text-left">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                     <!-- Dropdown nav-tab -->
@@ -157,9 +173,11 @@
                     <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
                     <div class="card-text drinksText" id="cameratext"></div>
                 </div>
-            </div>                
+            </div>    
+        </div>            
+        <div id="col-sm-4">
             <!--animations-->
-            <div class="card p-3 text-left">
+            <div class="card text-left">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
@@ -176,9 +194,10 @@
                     <div class="card-text drinksText" id="animationtext"></div>
                 </div>
             </div>
-        
+        </div>
+        <div id="col-sm-4">
             <!--render type + lighting-->
-            <div class="card p-3 text-left">
+            <div class="card text-left">
                 <div class="card-header">
                     <ul class="nav nav-tabs card-header-tabs">
                     <li class="nav-item">
@@ -210,25 +229,14 @@
                     <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
                 </div>
             </div>
-
+        </div>
+        <div class="col-sm-12">
             <!--gallery-->
             <div class="card text-left">
                 <div id="gallerytitle" class="card-header gallery-header"></div>
                 <div class="card-body">
                     <div class="gallery" id="gallery"></div>
                     <div id="gallerytext" class="card-text drinksText"></div>
-                </div>
-            </div>
-            <!--Descriptions-->
-            <div class="card p-3 text-left">
-                <div class="card-body">
-                    <div id="modelDescription">
-                        <div id="title_model" class="card-title"></div>
-                        <div id="subtitle_model" class="card-subtitle"></div>
-                        <div id="text_model" class="card-text"></div>
-                    </div>
-                    </div>
-                    <a id="button_model" href="#" class="btn btn-primary">Find out more ...</a>
                 </div>
             </div>
         </div>
