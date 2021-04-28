@@ -12,7 +12,8 @@
     padding: 0.25rem;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
-    width: 43%;
+    width: 25%;
+    height: 25%;
 }
 
 .model3D  {
@@ -36,5 +37,5 @@ X3D, x3d {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgba(182, 231, 243, 1.0);
-    display: inline-block;
+    display: flex;
 }
