@@ -132,21 +132,12 @@
                     </div>
                 </div>
             </div>
-            <!--gallery-->
-            <div class="col-sm-8">
-                <div class="card text-left">
-                    <div id="gallerytitle" class="card-header gallery-header"></div>
-                    <div class="card-body">
-                        <div class="gallery" id="gallery"></div>
-                        <div id="gallerytext" class="card-text drinksText"></div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
         <div id="interaction" class="row" style="display: none;">
             <!--Cam views-->
-            <div class="col-sm-4">   
+            <div class="col-sm-3">   
                 <div class="card text-left">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
@@ -176,7 +167,7 @@
                 </div>                
             </div>
             <!--animations-->
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="card text-left">
                     <div class="card-header">
                       <ul class="nav nav-tabs card-header-tabs">
@@ -197,7 +188,7 @@
             
             </div>
             <!--render type + lighting-->
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="card text-left">
                     <div class="card-header">
                       <ul class="nav nav-tabs card-header-tabs">
@@ -233,9 +224,19 @@
             </div>
         </div>
 
-        <!--Descriptions-->
-        <div id="Description" style="display: none;">
-            <div class="col-sm-12">
+        <div class="row" id="Description" style="display: none;">
+            <!--gallery-->
+            <div class="col-sm-8">
+                <div class="card text-left">
+                    <div id="gallerytitle" class="card-header gallery-header"></div>
+                    <div class="card-body">
+                        <div class="gallery" id="gallery"></div>
+                        <div id="gallerytext" class="card-text drinksText"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Descriptions-->
+            <div class="col-sm-4">
                 <div class="card text-left">
                     <div class="card-body">
                         <div id="modelDescription">
@@ -249,7 +250,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     
     <!-- footer-->
