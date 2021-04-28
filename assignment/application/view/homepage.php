@@ -136,8 +136,10 @@
             <div class="col-sm-6">
                 <div class="card text-left">
                     <div id="gallerytitle" class="card-header gallery-header"></div>
-                    <div class="gallery" id="gallery"></div>
-                    <div id="gallerytext" class="card-text"></div>
+                    <div class="card-body">
+                        <div class="gallery" id="gallery"></div>
+                        <div id="gallerytext" class="card-text drinksText"></div>
+                    </div>
                 </div>
             </div>
         </div>
