@@ -10,7 +10,6 @@
 .gallery .img-thumbnail {
     background-color: rgba(255, 255, 255, 0.0);
     padding: 0.25rem;
-    margin: 2px;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
     width: 20%;
