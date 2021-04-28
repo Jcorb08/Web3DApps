@@ -67,7 +67,7 @@ function getModelData(model){
     //x3d titles and description at the bottom
     $('#x3dtitle').html('<h2>' + jsonObj[0].x3dTitle + '</h2>');
     $('#x3dmethod').html('<p>' + jsonObj[0].x3dMethod + '</p>');
-    $('#title_model').html('<h2>' + jsonObj[0].Title + '</h2>');
+    $('#title_model').html(jsonObj[0].Title);
     $('#subtitle_model').html('<h3>' + jsonObj[0].Subtitle + '</h3>');
     $('#text_model').html('<p>' + jsonObj[0].Paragraph + '</p>');
     $('#button_model').attr('href', jsonObj[0].Link);

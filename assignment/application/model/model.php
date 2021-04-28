@@ -118,7 +118,7 @@ class Model {
 				$stmt->bindParam(5,$value['img']);
 				$stmt->execute();		
 			}
-			return "Home data inserted successfully inside test1.db";
+			return "Home data inserted successfully inside data.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
@@ -136,7 +136,7 @@ class Model {
 				$stmt->bindParam(3,$value['HomeID']);
 				$stmt->execute();		
 			}
-			return "Model data inserted successfully inside test1.db";
+			return "Model data inserted successfully inside data.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
@@ -159,7 +159,7 @@ class Model {
 				$stmt->bindParam(8,$value['rendertext']);
 				$stmt->execute();		
 			}
-			return "Misc data inserted successfully inside test1.db";
+			return "Misc data inserted successfully inside data.db";
 		}
 		catch(PD0EXception $e) {
 			print new Exception($e->getMessage());
