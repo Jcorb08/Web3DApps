@@ -87,163 +87,147 @@
     </div>    
 
     <!-- Models Page-->
-    <div id="models" class="container-fluid main_contents" style="display: none;">
-        <div class="row">
-            <!--X3D models-->
-            <div class="col-sm-6">
-                <div class="card text-left">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#" id="navCoke">Coca Cola</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="navSprite">Sprite</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="navPepper">Dr.Pepper</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="navLilt">Lilt</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="navOasis">Oasis</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" id="navCosta">Costa Coffee</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <div id="x3d">
-                            <div id="x3dtitle" class="card-title"></div>
-                            <!--X3D CODE GOES HERE-->
-                            <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
-                            <div class="model3D">
-                            <x3d id = "model">
-                                <scene>
-                                    <inline id="x3dmodel" url="assets/models/x3d/coca cola.x3d"> </inline>
-                                </scene>
-                            </x3d>
-                            </div>                    
-                            <div id="x3dmethod" class="card-text"></div>
-                        </div>
-                        </div>
-                    </div>
+    <div id="models" class="container-fluid main_contents card-columns" style="display: none;">
+        <!--X3D models-->
+        <div class="card w-50 text-left">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="navCoke">Coca Cola</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navSprite">Sprite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navPepper">Dr.Pepper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navLilt">Lilt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navOasis">Oasis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navCosta">Costa Coffee</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div id="x3d">
+                    <div id="x3dtitle" class="card-title"></div>
+                    <!--X3D CODE GOES HERE-->
+                    <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
+                    <div class="model3D">
+                    <x3d id = "model">
+                        <scene>
+                            <inline id="x3dmodel" url="assets/models/x3d/coca cola.x3d"> </inline>
+                        </scene>
+                    </x3d>
+                    </div>                    
+                    <div id="x3dmethod" class="card-text"></div>
                 </div>
-            </div>
-            <!--Cam views-->
-            <div class="col-sm-2">   
-                <div class="card text-left">
-                    <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
-                        <!-- Dropdown nav-tab -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Cameras</a>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" onclick="">Front</a>
-                            <a class="dropdown-item" href="#" onclick="">Back</a>
-                            <a class="dropdown-item" href="#" onclick="">Left</a>
-                            <a class="dropdown-item" href="#" onclick="">Right</a>
-                            <a class="dropdown-item" href="#" onclick="">Top</a>
-                            <a class="dropdown-item" href="#" onclick="">Bottom</a>
-                            </div>
-                        </li>
-                        </ul>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-Title drinksText" id="cameratitle"></div>                            
-                        <a href="#" class="btn btn-success btn-responsive" onclick="">Default</a>
-                        <a href="#" class="btn btn-primary btn-responsive" onclick="">Back</a>
-                        <a href="#" class="btn btn-secondary btn-responsive" onclick="">Left</a>
-                        <a href="#" class="btn btn-secondary btn-responsive" onclick="">Right</a>
-                        <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
-                        <div class="card-text drinksText" id="cameratext"></div>
-                    </div>
-                </div>                
-            </div>
-            <!--animations-->
-            <div class="col-sm-2">
-                <div class="card text-left">
-                    <div class="card-header">
-                      <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#">Animation</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-Title drinksText" id="animationtitle"></div>
-                      <a href="#" class="btn btn-outline-light btn-responsive" onclick="">RotX</a>
-                      <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
-                      <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
-                      <a href="#" class="btn btn-outline-dark btn-responsive" onclick="">Stop</a>
-                      <div class="card-text drinksText" id="animationtext"></div>
-                    </div>
-                  </div>
-            
-            </div>
-            <!--render type + lighting-->
-            <div class="col-sm-2">
-                <div class="card text-left">
-                    <div class="card-header">
-                      <ul class="nav nav-tabs card-header-tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Render</a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Polygon</a>
-                            <a class="dropdown-item" href="#" onclick="">Wireframe</a>
-                            <a class="dropdown-item" href="#">Vertex</a>
-                          </div>
-                        </li>
-                      <!-- Dropdown nav-tab -->
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Lights</a>
-                          <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Default</a>
-                            <a class="dropdown-item" href="#">Onmi On/Off</a>
-                            <a class="dropdown-item" href="#">Target On/Off</a>
-                            <a class="dropdown-item" href="#">Headlight On/Off</a>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="card-body">
-                      <div class="card-Title drinksText" id="rendertitle"></div>
-                      <a href="#" class="btn btn-success btn-responsive">Poly</a>
-                      <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
-                      <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
-                      <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
-                      <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
-                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="row" id="Description" style="display: none;">
-            <!--gallery-->
-            <div class="col-sm-8">
-                <div class="card text-left">
-                    <div id="gallerytitle" class="card-header gallery-header"></div>
-                    <div class="card-body">
-                        <div class="gallery" id="gallery"></div>
-                        <div id="gallerytext" class="card-text drinksText"></div>
+        <!--Cam views--> 
+        <div class="card text-left">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                <!-- Dropdown nav-tab -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Cameras</a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#" onclick="">Front</a>
+                    <a class="dropdown-item" href="#" onclick="">Back</a>
+                    <a class="dropdown-item" href="#" onclick="">Left</a>
+                    <a class="dropdown-item" href="#" onclick="">Right</a>
+                    <a class="dropdown-item" href="#" onclick="">Top</a>
+                    <a class="dropdown-item" href="#" onclick="">Bottom</a>
                     </div>
-                </div>
+                </li>
+                </ul>
             </div>
-            <!--Descriptions-->
-            <div class="col-sm-4">
-                <div class="card text-left">
-                    <div class="card-body">
-                        <div id="modelDescription">
-                            <div id="title_model" class="card-title"></div>
-                            <div id="subtitle_model" class="card-subtitle"></div>
-                            <div id="text_model" class="card-text"></div>
-                        </div>
-                        </div>
-                        <a id="button_model" href="#" class="btn btn-primary">Find out more ...</a>
+            <div class="card-body">
+                <div class="card-Title drinksText" id="cameratitle"></div>                            
+                <a href="#" class="btn btn-success btn-responsive" onclick="">Default</a>
+                <a href="#" class="btn btn-primary btn-responsive" onclick="">Back</a>
+                <a href="#" class="btn btn-secondary btn-responsive" onclick="">Left</a>
+                <a href="#" class="btn btn-secondary btn-responsive" onclick="">Right</a>
+                <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
+                <div class="card-text drinksText" id="cameratext"></div>
+            </div>
+        </div>                
+        <!--animations-->
+        <div class="card text-left">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Animation</a>
+                </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="card-Title drinksText" id="animationtitle"></div>
+                <a href="#" class="btn btn-outline-light btn-responsive" onclick="">RotX</a>
+                <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
+                <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
+                <a href="#" class="btn btn-outline-dark btn-responsive" onclick="">Stop</a>
+                <div class="card-text drinksText" id="animationtext"></div>
+            </div>
+        </div>
+    
+        <!--render type + lighting-->
+        <div class="card text-left">
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Render</a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Polygon</a>
+                    <a class="dropdown-item" href="#" onclick="">Wireframe</a>
+                    <a class="dropdown-item" href="#">Vertex</a>
                     </div>
+                </li>
+                <!-- Dropdown nav-tab -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Lights</a>
+                    <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Default</a>
+                    <a class="dropdown-item" href="#">Onmi On/Off</a>
+                    <a class="dropdown-item" href="#">Target On/Off</a>
+                    <a class="dropdown-item" href="#">Headlight On/Off</a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <div class="card-Title drinksText" id="rendertitle"></div>
+                <a href="#" class="btn btn-success btn-responsive">Poly</a>
+                <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
+                <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
+                <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
+                <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
+            </div>
+        </div>
+
+        <!--gallery-->
+        <div class="card text-left">
+            <div id="gallerytitle" class="card-header gallery-header"></div>
+            <div class="card-body">
+                <div class="gallery" id="gallery"></div>
+                <div id="gallerytext" class="card-text drinksText"></div>
+            </div>
+        </div>
+        <!--Descriptions-->
+        <div class="card text-left">
+            <div class="card-body">
+                <div id="modelDescription">
+                    <div id="title_model" class="card-title"></div>
+                    <div id="subtitle_model" class="card-subtitle"></div>
+                    <div id="text_model" class="card-text"></div>
                 </div>
+                </div>
+                <a id="button_model" href="#" class="btn btn-primary">Find out more ...</a>
             </div>
         </div>
     </div>
