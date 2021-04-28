@@ -13,8 +13,8 @@
     margin: 2px;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
-    max-width: 43%;
-    height: auto;
+    width: 400px;
+    height: 800px;
 }
 
 .model3D  {
