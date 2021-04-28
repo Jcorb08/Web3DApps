@@ -12,7 +12,7 @@
     padding: 0.25rem;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
-    width: 20%;
+    width: 43%;
 }
 
 .model3D  {
@@ -28,4 +28,13 @@ X3D, x3d {
     border: 1px solid rgba(255, 0, 0, 1.0);
     width: 100%;
     height: 100%
+}
+
+.card-column .card {
+    border: 1px solid rgba(0,0,0,.125);
+    /* border-radius: .25rem;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(182, 231, 243, 1.0);
+    display: inline-block;
 }
