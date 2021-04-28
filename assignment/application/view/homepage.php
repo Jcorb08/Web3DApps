@@ -133,7 +133,7 @@
                 </div>
             </div>
             <!--gallery-->
-            <div class="col-sm-4">
+            <div class="col-sm-8">
                 <div class="card text-left">
                     <div id="gallerytitle" class="card-header gallery-header"></div>
                     <div class="card-body">
