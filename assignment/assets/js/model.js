@@ -21,6 +21,58 @@ function wireframe(){
 	e.runtime.togglePoints(true);
 }
 
+var lightOn = true;
+
+function headLight()
+{
+	lightOn = !lightOn;
+	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
+	console.log(lightOn);
+}
+
+function omniLight()
+{
+	lightOn = !lightOn;
+	document.getElementById('model__omniLight').setAttribute('headlight', lightOn.toString());
+	console.log(lightOn);
+}
+
+function targetLight()
+{
+	lightOn = !lightOn;
+	document.getElementById('model__targetLight').setAttribute('headlight', lightOn.toString());
+	console.log(lightOn);
+}
+
+function cameraFront()
+{
+	document.getElementById('model__CameraFront').setAttribute('bind', 'true');
+}
+
+function cameraBack()
+{
+	document.getElementById('model__CameraBack').setAttribute('bind', 'true');
+}
+
+function cameraLeft()
+{
+	document.getElementById('model__CameraLeft').setAttribute('bind', 'true');
+}
+
+function cameraRight()
+{
+	document.getElementById('model__CameraRight').setAttribute('bind', 'true');
+}
+
+function cameraTop()
+{
+	document.getElementById('model__CameraTop').setAttribute('bind', 'true');
+}
+
+function cameraBottom()
+{
+	document.getElementById('model__CameraBottom').setAttribute('bind', 'true');
+}
 
 // goes in X3D file
 // <timeSensor DEF="RotationTimer" cycleInterval="4" loop="true" enabled="false"></timeSensor>
