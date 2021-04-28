@@ -1,11 +1,11 @@
 var spinning = false;
 function spin(){
   spinning = !spinning;
-  document.getElementById('model_RotationTimer').setAttribute('enabled', spinning.toString());
+  document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
 }
 function stopRotate(){
   spinning = false;
-  document.getElementById('model_RotationTimer').setAttribute('enabled', spinning.toString());
+  document.getElementById('model__RotationTimer').setAttribute('enabled', spinning.toString());
 }
 function animateModel(){
   if(document.getElementById('model_RotationTimer').getAttribute('enabled')!= true){
@@ -26,7 +26,7 @@ var lightOn = true;
 function headLight()
 {
 	lightOn = !lightOn;
-	document.getElementById('x3dmodel__headlight').setAttribute('headlight', lightOn.toString());
+	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
 	console.log(lightOn);
 }
 
