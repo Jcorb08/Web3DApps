@@ -33,7 +33,7 @@
         <div class="container">
             <!-- Brand -->
             <div class="logo">
-                <a class="navbar-brand" href="javascript:swap('home');">
+                <a class="navbar-brand" href="">
                 <h1>1</h1>
                 <h1>oca</h1>
                 <h2>Cola</h2>
@@ -222,7 +222,7 @@
                     <div class="card-body">
                         <div class="card-Title drinksText" id="rendertitle"></div>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
-                        <a href="#" class="btn btn-success btn-responsive" onclick="headlight();">Headlight</a>
+                        <a href="#" class="btn btn-success btn-responsive" onclick="headLight();">Headlight</a>
                         <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
                     </div>
                 </div>

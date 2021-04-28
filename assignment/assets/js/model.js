@@ -46,32 +46,32 @@ function targetLight()
 
 function cameraFront()
 {
-	document.getElementById('model__CameraFront').setAttribute('bind', 'true');
+	document.getElementById('model__Front').setAttribute('bind', 'true');
 }
 
 function cameraBack()
 {
-	document.getElementById('model__CameraBack').setAttribute('bind', 'true');
+	document.getElementById('model__Back').setAttribute('bind', 'true');
 }
 
 function cameraLeft()
 {
-	document.getElementById('model__CameraLeft').setAttribute('bind', 'true');
+	document.getElementById('model__Left').setAttribute('bind', 'true');
 }
 
 function cameraRight()
 {
-	document.getElementById('model__CameraRight').setAttribute('bind', 'true');
+	document.getElementById('model__Right').setAttribute('bind', 'true');
 }
 
 function cameraTop()
 {
-	document.getElementById('model__CameraTop').setAttribute('bind', 'true');
+	document.getElementById('model__Top').setAttribute('bind', 'true');
 }
 
 function cameraBottom()
 {
-	document.getElementById('model__CameraBottom').setAttribute('bind', 'true');
+	document.getElementById('model__Bottom').setAttribute('bind', 'true');
 }
 
 // goes in X3D file
