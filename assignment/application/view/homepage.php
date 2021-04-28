@@ -132,12 +132,8 @@
                     </div>
                 </div>
             </div>
-            
-        </div>
-
-        <div id="interaction" class="row" style="display: none;">
             <!--Cam views-->
-            <div class="col-sm-3">   
+            <div class="col-sm-2">   
                 <div class="card text-left">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
@@ -167,7 +163,7 @@
                 </div>                
             </div>
             <!--animations-->
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <div class="card text-left">
                     <div class="card-header">
                       <ul class="nav nav-tabs card-header-tabs">
@@ -188,7 +184,7 @@
             
             </div>
             <!--render type + lighting-->
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <div class="card text-left">
                     <div class="card-header">
                       <ul class="nav nav-tabs card-header-tabs">
