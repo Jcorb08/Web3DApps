@@ -162,22 +162,24 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" aria-expanded="false">Cameras</a>
                             <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#" onclick="">Front</a>
-                            <a class="dropdown-item" href="#" onclick="">Back</a>
-                            <a class="dropdown-item" href="#" onclick="">Left</a>
-                            <a class="dropdown-item" href="#" onclick="">Right</a>
-                            <a class="dropdown-item" href="#" onclick="">Top</a>
-                            <a class="dropdown-item" href="#" onclick="">Bottom</a>
+                            <a class="dropdown-item" href="#" onclick="cameraFront();">Front</a>
+                            <a class="dropdown-item" href="#" onclick="cameraBack();">Back</a>
+                            <a class="dropdown-item" href="#" onclick="cameraLeft();">Left</a>
+                            <a class="dropdown-item" href="#" onclick="cameraRight();">Right</a>
+                            <a class="dropdown-item" href="#" onclick="cameraTop();">Top</a>
+                            <a class="dropdown-item" href="#" onclick="cameraBottom();">Bottom</a>
                             </div>
                         </li>
                         </ul>
                     </div>
                     <div class="card-body">
                         <div class="card-Title drinksText" id="cameratitle"></div>                            
-                        <a href="#" class="btn btn-success btn-responsive" onclick="">Default</a>
-                        <a href="#" class="btn btn-primary btn-responsive" onclick="">Back</a>
-                        <a href="#" class="btn btn-secondary btn-responsive" onclick="">Left</a>
-                        <a href="#" class="btn btn-secondary btn-responsive" onclick="">Right</a>
+                        <a href="#" class="btn btn-success btn-responsive" onclick="cameraFront();">Default</a>
+                        <a href="#" class="btn btn-primary btn-responsive" onclick="cameraBack();">Back</a>
+                        <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraLeft();">Left</a>
+                        <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraRight();">Right</a>
+                        <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraTop();">Top</a>
+                        <a href="#" class="btn btn-secondary btn-responsive" onclick="cameraBottom();">Bottom</a>
                         <a href="#" class="btn btn-outline-dark disabled btn-responsive">Off</a>
                         <div class="card-text drinksText" id="cameratext"></div>
                     </div>
@@ -198,10 +200,9 @@
                     </div>
                     <div class="card-body">
                         <div class="card-Title drinksText" id="animationtitle"></div>
-                        <a href="#" class="btn btn-outline-light btn-responsive" onclick="">RotX</a>
-                        <a href="#" class="btn btn-outline-light btn-responsive">RotY</a>
-                        <a href="#" class="btn btn-outline-light btn-responsive">RotZ</a>
-                        <a href="#" class="btn btn-outline-dark btn-responsive" onclick="">Stop</a>
+                        <a href="#" class="btn btn-outline-light btn-responsive" onclick="spin();">Animate</a>
+                        <a href="#" class="btn btn-outline-dark btn-responsive" onclick="stopRotate();">Stop</a>
+                        <a href="#" class="btn btn-outline-light btn-responsive">Random Texture</a>
                         <div class="card-text drinksText" id="animationtext"></div>
                     </div>
                 </div>
@@ -221,8 +222,7 @@
                     <div class="card-body">
                         <div class="card-Title drinksText" id="rendertitle"></div>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
-                        <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
-                        <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
+                        <a href="#" class="btn btn-success btn-responsive" onclick="headlight();">Headlight</a>
                         <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
                     </div>
                 </div>
