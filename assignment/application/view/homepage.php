@@ -191,6 +191,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Animation</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Texture</a>
+                        </li>
                         </ul>
                     </div>
                     <div class="card-body">
@@ -210,8 +213,9 @@
                         <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Render</a>
-                            <a class="nav-link active" href="#">Lights</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Lights</a>
                         </ul>
                     </div>
                     <div class="card-body">
