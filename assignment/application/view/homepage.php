@@ -90,7 +90,7 @@
     <div id="models" class="container-fluid main_contents" style="display: none;">
         <div class="row">
             <!--X3D models-->
-            <div class="col-sm-8">
+            <div class="col-sm-6">
                 <div class="card text-left">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
@@ -133,7 +133,7 @@
                 </div>
             </div>
             <!--gallery-->
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <div class="card text-left">
                     <div id="gallerytitle" class="card-header gallery-header"></div>
                     <div class="gallery" id="gallery"></div>
