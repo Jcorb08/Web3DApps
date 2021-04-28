@@ -140,7 +140,6 @@
                             <div id="subtitle_model" class="card-subtitle"></div>
                             <div id="text_model" class="card-text"></div>
                         </div>
-                        </div>
                         <a id="button_model" href="#" class="btn btn-primary">Find out more ...</a>
                     </div>
                 </div>
