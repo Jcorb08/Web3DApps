@@ -26,7 +26,7 @@ var lightOn = true;
 function headLight()
 {
 	lightOn = !lightOn;
-	document.getElementById('model__headlight').setAttribute('headlight', lightOn.toString());
+	document.getElementById('x3dmodel__headlight').setAttribute('headlight', lightOn.toString());
 	console.log(lightOn);
 }
 
