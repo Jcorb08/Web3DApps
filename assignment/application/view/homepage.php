@@ -134,9 +134,15 @@
             <div class="col-sm-4">
                 <!--Descriptions-->
                 <div class="card text-left">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="title_model" href=""></a>
+                        </li>
+                        </ul>
+                    </div>
                     <div class="card-body">
                         <div id="modelDescription">
-                            <div id="title_model" class="card-title"></div>
                             <div id="subtitle_model" class="card-subtitle"></div>
                             <div id="text_model" class="card-text"></div>
                         </div>
@@ -203,28 +209,13 @@
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Render</a>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Polygon</a>
-                            <a class="dropdown-item" href="#" onclick="">Wireframe</a>
-                            <a class="dropdown-item" href="#">Vertex</a>
-                            </div>
-                        </li>
-                        <!-- Dropdown nav-tab -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Lights</a>
-                            <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Default</a>
-                            <a class="dropdown-item" href="#">Onmi On/Off</a>
-                            <a class="dropdown-item" href="#">Target On/Off</a>
-                            <a class="dropdown-item" href="#">Headlight On/Off</a>
-                            </div>
+                            <a class="nav-link active" href="#">Render</a>
+                            <a class="nav-link active" href="#">Lights</a>
                         </li>
                         </ul>
                     </div>
                     <div class="card-body">
                         <div class="card-Title drinksText" id="rendertitle"></div>
-                        <a href="#" class="btn btn-success btn-responsive">Poly</a>
                         <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
                         <a href="#" class="btn btn-success btn-responsive" onclick="">Headlight</a>
                         <a href="#" class="btn btn-outline-dark btn-responsive">Default</a>
