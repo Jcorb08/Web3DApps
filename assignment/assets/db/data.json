@@ -85,7 +85,7 @@
   "Misc": [
     {
       "gallerytitle": "3D Image Gallery",
-      "gallerytext": "3D images rendered in Blender 2.9, click to see them bigger!",
+      "gallerytext": "3D Images rendered in Blender 2.9, click to see them bigger!",
       "cameratitle": "Camera Views",
       "cameratext": "These buttons select a range of X3D model viewpoints",
       "animationtitle": "Animation and Texture Options",
