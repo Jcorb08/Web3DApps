@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <div id="col-sm-4">
+            <div class="col-sm-4">
                 <!--Descriptions-->
                 <div class="card text-left">
                     <div class="card-body">
