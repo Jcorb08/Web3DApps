@@ -1,7 +1,7 @@
 var spinning = false;
 function spin(){
   spinning = !spinning;
-  document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', spinning.toString());
+  document.getElementById('x3dmodel_RotationTimer').setAttribute('enabled', spinning.toString());
 }
 function stopRotate(){
   spinning = false;
