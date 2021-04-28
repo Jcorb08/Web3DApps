@@ -147,7 +147,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="interaction">
             <div id="col-sm-4">
                 <!--Cam views--> 
                 <div class="card text-left">
@@ -234,7 +234,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12" id="pics">
             <!--gallery-->
             <div class="card text-left">
                 <div id="gallerytitle" class="card-header gallery-header"></div>

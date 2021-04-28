@@ -8,14 +8,14 @@ $(document).ready(function() {
 		$('#home').show();
 		$('#models').hide();
 		$('#interaction').hide();
-		$('#Description').hide();
+		$('#pics').hide();
 
 
 		$('#navHome').click(function(){
 			$('#home').show();
 			$('#models').hide();
 			$('#interaction').hide();
-			$('#Description').hide();
+			$('#pics').hide();
 			getHomeData();	  
 		});
 
@@ -23,7 +23,7 @@ $(document).ready(function() {
 			$('#home').hide();
 			$('#models').show();
 			$('#interaction').show(); 
-			$('#Description').show();
+			$('#pics').show();
 			getMiscData();
     	getModelData('Coca Cola');
 		});
