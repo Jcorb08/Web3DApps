@@ -1,3 +1,10 @@
+
+
+
+// https://doc.x3dom.org/tutorials/animationInteraction/switch/index.html
+// https://doc.x3dom.org/tutorials/basics/htmlCSS/index.html
+// try this ^
+
 var spinning = false;
 function spin(){
   spinning = !spinning;
