@@ -21,16 +21,16 @@ var textures = ['costa.jpg','grape.jpg','lilt.jpg','orange.jpg','pepper_logo.jpg
 
 // changes texture randomly
 function changeTexture(){
-	document.getElementById('x3dmodel__image').setAttribute('url', '/assets/images/textures/' + textures[Math.floor(Math.random() * 8)]);
+	document.getElementById('x3dmodel__image').setAttribute('url', '../../images/textures/' + textures[Math.floor(Math.random() * 8)]);
 }
 
 // resets the texture of the models
 function resetLiltTexture(){
-	document.getElementById('x3dmodel__image').setAttribute('url', '/assets/images/textures/lilt.jpg');
+	document.getElementById('x3dmodel__image').setAttribute('url', '../../images/textures/lilt.jpg');
 }
 
 function resetCostaTexture(){
-	document.getElementById('x3dmodel__image').setAttribute('url', '/assets/images/textures/costa.jpg');
+	document.getElementById('x3dmodel__image').setAttribute('url', '../../images/textures/costa.jpg');
 }
 
 
