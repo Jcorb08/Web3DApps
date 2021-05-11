@@ -122,7 +122,7 @@
                             <div class="model3D">
                             <x3d id = "model">
                                 <scene>
-                                    <inline id="x3dmodel" url="assets/models/x3d/coca cola.x3d"> </inline>
+                                    <inline nameSpaceName="x3dmodel" url="assets/models/x3d/coca cola.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    
