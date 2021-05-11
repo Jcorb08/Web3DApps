@@ -84,10 +84,10 @@ $(document).ready(function() {
 			$('#resettexture').removeClass('disabled');
 		}
 		if(randomid == "#navCosta"){
-			$(randomid).attr('onclick','resetCostaTexture();');
+			$('resettexture').attr('onclick','resetCostaTexture();');
 		}
 		if(randomid == "#navLilt"){
-			$(randomid).attr('onclick','resetLiltTexture();');
+			$('resettexture').attr('onclick','resetLiltTexture();');
 		}
 	}
 
