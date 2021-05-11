@@ -28,8 +28,8 @@ $(document).ready(function() {
 			$('#pics').show();
 			resetActive('#navModels');
 			getMiscData();
-    	getModelData('Coca Cola');
-			textureButton('#navCoke');
+    	getModelData('Lilt');
+			textureButton('#navLilt');
 		});
 	}
 

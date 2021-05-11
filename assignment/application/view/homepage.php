@@ -96,7 +96,7 @@
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#" id="navCoke">Coca Cola</a>
+                                <a class="nav-link" href="#" id="navCoke">Coca Cola</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" id="navSprite">Sprite</a>
@@ -105,7 +105,7 @@
                                 <a class="nav-link" href="#" id="navPepper">Dr.Pepper</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" id="navLilt">Lilt</a>
+                                <a class="nav-link  active" href="#" id="navLilt">Lilt</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" id="navOasis">Oasis</a>
@@ -122,7 +122,7 @@
                             <div class="model3D">
                             <x3d id = "wiremodel">
                                 <scene>
-                                    <inline id="model" nameSpaceName="x3dmodel" mapDEFToID="true" url="assets/models/x3d/coca cola.x3d"> </inline>
+                                    <inline id="model" nameSpaceName="x3dmodel" mapDEFToID="true" url="assets/models/x3d/lilt.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    
