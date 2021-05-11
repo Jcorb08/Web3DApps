@@ -199,9 +199,10 @@
                     </div>
                     <div class="card-body">
                         <div class="card-Title drinksText" id="animationtitle"></div>
-                        <a href="#" class="btn btn-outline-light btn-responsive" onclick="spin();">Animate</a>
-                        <a href="#" class="btn btn-outline-dark btn-responsive" onclick="stopRotate();">Stop</a>
-                        <a href="#" class="btn btn-outline-light btn-responsive">Random Texture</a>
+                        <a href="#" class="btn btn-warning btn-responsive" onclick="spin();">Animate</a>
+                        <a href="#" class="btn btn-danger btn-responsive" onclick="stopRotate();">Stop</a>
+                        <a id="texture" href="#" class="btn btn-info btn-responsive" onclick='changeTexture();'>Random Texture</a>
+                        <a id="resettexture" href="#" class="btn btn-outline-info btn-responsive" onclick=''>Reset Texture</a>
                         <div class="card-text drinksText" id="animationtext"></div>
                     </div>
                 </div>
@@ -220,8 +221,8 @@
                     </div>
                     <div class="card-body">
                         <div class="card-Title drinksText" id="rendertitle"></div>
-                        <a href="#" class="btn btn-secondary btn-responsive" onclick="wireframe();">Wire</a>
-                        <a href="#" class="btn btn-success btn-responsive" onclick="headLight();">Headlight</a>
+                        <a href="#" class="btn btn-dark btn-responsive" onclick="wireframe();">Wire</a>
+                        <a href="#" class="btn btn-light btn-responsive" onclick="headLight();">Headlight</a>
                         <div class="card-text x3dRenderDescription drinksText" id="rendertext"></div>
                     </div>
                 </div>

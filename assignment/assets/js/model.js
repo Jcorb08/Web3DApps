@@ -14,18 +14,26 @@ function stopRotate(){
   spinning = false;
   document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', spinning.toString());
 }
-function animateModel(){
-  if(document.getElementById('x3dmodel__RotationTimer').getAttribute('enabled')!= true){
-    document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', 'true');
-  } else {
-    document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', 'false');
-  }
-}
 
 function wireframe(){
 	var e = document.getElementById("wiremodel");
 	e.runtime.togglePoints(true);
 	e.runtime.togglePoints(true);
+}
+
+// textures that can be added to lilt and costa models
+var textures = ['costa.jpg','grape.jpg','lilt.jpg','orange.jpg','pepper_logo.jpg','sign.jpg','pineapple.jpg','strawberry.jpg']
+
+function changeTexture(){
+	document.getElementById('x3dmoel__image').setAttribute('url', '/assets/images/textures/' + textures[Math.floor(Math.random() * 8)]);
+}
+
+function resetLiltTexture(){
+	document.getElementById('x3dmoel__image').setAttribute('url', '/assets/images/textures/lilt.jpg');
+}
+
+function resetCostaTexture(){
+	document.getElementById('x3dmoel__image').setAttribute('url', '/assets/images/textures/costa.jpg');
 }
 
 var lightOn = true;
