@@ -1,14 +1,4 @@
 <?php
-/*
-Some improvements
-It would be a good idea to think about creating more controller functions to manipulate the database based on typical CRUD (Create, Read, Update and Delete) functionalities.  For example, think about building controller functions for:
-    • Inserting a new field: (i.e. the remaining data elements in your Lab 6 view) as well as other properties
-    • Updating a field
-    • Getting a single value from a field
-    • Getting a single field
-    • Getting all fields of the same property, e.g. modelDescriptions.    • …
-*/		
-
 // Create the controller class for the MVC design pattern
 class Controller {
 
@@ -53,36 +43,48 @@ class Controller {
 		echo json_encode($data);
 	}
 
+	// test
 	function test()
 	{
 		$this->load->view('test');
 	}
 
+	// creating all tables
 	function dbCreateTables()
 	{
 		$data = $this->model->dbCreateTables();
 		$this->load->view('createTables', $data);
 	}
+
+	// inserting all data
 	function dbInsertData()
 	{
 		$data = $this->model->dbInsertData();
 	   	$this->load->view('insertData', $data);
 	}  
+
+	// getting all data
 	function dbGetAllData()
 	{
 		$data = $this->model->dbGetAllData();
 		$this->load->view('viewTables', $data);
 	}  
+
+	// getting just home table data
 	function dbGetHomeData()
 	{
 		$data = $this->model->dbGetHomeData();
 		$this->load->view('viewTables', $data);
 	}
+
+	// getting just misc table data
 	function dbGetMiscData()
 	{
 		$data = $this->model->dbGetMiscData();
 		$this->load->view('viewTables', $data);
 	}
+	
+	// getting just models table data
 	function dbGetModelsData()
 	{
 		$data = $this->model->dbGetModelsData();

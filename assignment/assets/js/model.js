@@ -1,10 +1,4 @@
-
-
-
-// https://doc.x3dom.org/tutorials/animationInteraction/switch/index.html
-// https://doc.x3dom.org/tutorials/basics/htmlCSS/index.html
-// try this ^
-
+// animating the model
 var spinning = false;
 function spin(){
   spinning = !spinning;
@@ -15,6 +9,7 @@ function stopRotate(){
   document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', spinning.toString());
 }
 
+// wireframe model
 function wireframe(){
 	var e = document.getElementById("wiremodel");
 	e.runtime.togglePoints(true);
@@ -24,10 +19,12 @@ function wireframe(){
 // textures that can be added to lilt and costa models
 var textures = ['costa.jpg','grape.jpg','lilt.jpg','orange.jpg','pepper_logo.jpg','sign.jpg','pineapple.jpg','strawberry.jpg']
 
+// changes texture randomly
 function changeTexture(){
 	document.getElementById('x3dmodel__image').setAttribute('url', '/assets/images/textures/' + textures[Math.floor(Math.random() * 8)]);
 }
 
+// resets the texture of the models
 function resetLiltTexture(){
 	document.getElementById('x3dmodel__image').setAttribute('url', '/assets/images/textures/lilt.jpg');
 }
@@ -36,6 +33,9 @@ function resetCostaTexture(){
 	document.getElementById('x3dmodel__image').setAttribute('url', '/assets/images/textures/costa.jpg');
 }
 
+
+// removes the headlight
+// slight change as all cameras have back lights themselves
 var lightOn = true;
 
 function headLight()
@@ -45,20 +45,7 @@ function headLight()
 	console.log(lightOn);
 }
 
-function omniLight()
-{
-	lightOn = !lightOn;
-	document.getElementById('model__omniLight').setAttribute('headlight', lightOn.toString());
-	console.log(lightOn);
-}
-
-function targetLight()
-{
-	lightOn = !lightOn;
-	document.getElementById('model__targetLight').setAttribute('headlight', lightOn.toString());
-	console.log(lightOn);
-}
-
+// camera binds
 function cameraFront()
 {
 	document.getElementById('x3dmodel__Front').setAttribute('bind', 'true');

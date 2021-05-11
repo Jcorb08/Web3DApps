@@ -166,6 +166,7 @@ class Model {
 		}
 	}
 
+	// returns all data in db
 	public function dbGetAllData(){
 		
 		$result = array_merge($this->dbGetHomeData(true), 
@@ -177,6 +178,7 @@ class Model {
 		return $result;
 	}
 
+	// returns all Home table data
 	public function dbGetHomeData($calledFromModelFunction = false)
 	{
 		try{
@@ -211,6 +213,7 @@ class Model {
 		return $result;
 	}
 
+	// returns all data in misc table
 	public function dbGetMiscData($calledFromModelFunction = false)
 	{
 		try{
@@ -243,6 +246,7 @@ class Model {
 		return $result;
 	}
 
+	// returns all data in models table
 	public function dbGetModelsData($calledFromModelFunction = false)
 	{
 		try{
@@ -275,6 +279,7 @@ class Model {
 		return $result;
 	}
 
+	// returns the info for the model being accessed
 	public function dbGetModelData($modelName)
 	{
 		try{

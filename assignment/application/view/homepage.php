@@ -83,6 +83,7 @@
                 </div>
             </div>
         </div>
+        <!-- cards for information (dynamically placed) -->
         <div class="row" id="cards_home"></div>
     </div>    
 
@@ -117,8 +118,7 @@
                     <div class="card-body">
                         <div id="x3d">
                             <div id="x3dtitle" class="card-title"></div>
-                            <!--X3D CODE GOES HERE-->
-                            <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
+                            <!--X3D model-->
                             <div class="model3D">
                             <x3d id = "wiremodel">
                                 <scene>
@@ -186,7 +186,7 @@
                 </div>    
             </div>            
             <div class="col-sm-4">
-                <!--animations-->
+                <!--animations and textures-->
                 <div class="card text-left">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs">
@@ -249,6 +249,7 @@
             <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>&copy 2021 Web 3D Applications</p>
             </div>
+            <!-- links to archives required -->
             <div class="navbar-text float-right social">
                 <a href="https://github.com/Jcorb08/Web3DApps/tree/main/assignment/assets/models/original" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
                         title="Model Archive"><i class="fas fa-cube fa-4x" style="font-size: 20px;color: white;"></i></a>

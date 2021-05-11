@@ -4,6 +4,7 @@ $(document).ready(function(){
   getHomeData();
 });
 
+// fetching data required for home page along with adding in html for cards
 function getHomeData(){
   $.getJSON("index.php/getHomeData", function(jsonObj){
     // can see the object returned
@@ -35,6 +36,7 @@ function getHomeData(){
   });
 }
 
+// fetching data required for misc items on models page
 function getMiscData(){
   $.getJSON("index.php/getMiscData", function(jsonObj){
     console.log('miscData');
@@ -58,6 +60,7 @@ function getMiscData(){
   
 }
 
+// fetching the data required for the models
 function getModelData(model){
   console.log(model);
   var url = "index.php/getModelData(" + model + ")";

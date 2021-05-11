@@ -3,6 +3,7 @@ $(document).ready(function() {
 	selectPage();
 	selectModel();
 
+	// selects the page and changes active status
 	function selectPage() {
 
 		$('#home').show();
@@ -32,6 +33,8 @@ $(document).ready(function() {
 		});
 	}
 
+	// selects models and changes active status along with 
+	// disabling and enabling some buttons
 	function selectModel() {
 		$('#navCoke').click(function(){
 			getModelData('Coca Cola');
