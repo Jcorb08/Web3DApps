@@ -12,7 +12,6 @@
 
     <!-- X3dom -->
     <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/x3dom/release/x3dom.css'></link>
-    <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>
 
     <!-- fancybox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -291,6 +290,8 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!--X3dom-->
+    <script type='text/javascript' src='https://www.x3dom.org/x3dom/release/x3dom.js'></script>    
     <!--popovers, swap function, custom scripts-->
     <script src="assets/js/swap.js"></script>
     <!--gallery generator-->
