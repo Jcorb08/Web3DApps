@@ -251,7 +251,7 @@
             </div>
             <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>Github Archive ->
-                <a href="https://github.com/Jcorb08/Web3DApps"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
+                <a href="https://github.com/Jcorb08/Web3DApps/tree/main/assignment"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
                 </p>
             </div>
         </div>
