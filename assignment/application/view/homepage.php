@@ -50,11 +50,12 @@
                 <!-- ml-auto to left mr-auto to right mx-auto in center-->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a id="navHome" class="nav-link active" href="">Home</a>
+                        <a id="navHome" class="nav-link active" href="" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
+                        title="Home" data-content="Information of various brands on display">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
-                        title="About Web 3D Applications" data-content="3D Apps is a final year and postgraduate module ...">About</a>
+                        title="About this Assignment" data-content="This uses PDOs and MVC to commicate with the 3 SQLite Tables, to display data.">About</a>
                     </li>
                     <li class="nav-item">
                         <a id="navModels" class="nav-link" href="#" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
