@@ -249,10 +249,13 @@
             <div class="navbar-text float-left copyright">
                 <p><span class="align-baseline"></span>&copy 2021 Web 3D Applications</p>
             </div>
-            <div class="navbar-text float-left copyright">
-                <p><span class="align-baseline"></span>Github Archive ->
-                <a href="https://github.com/Jcorb08/Web3DApps/tree/main/assignment"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
-                </p>
+            <div class="navbar-text float-right social">
+                <a href="https://github.com/Jcorb08/Web3DApps/tree/main/assignment/assets/models/original" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
+                        title="Model Archive"><i class="fas fa-cube fa-4x" style="font-size: 20px;color: white;"></i></a>
+                <a href="https://github.com/Jcorb08/Web3DApps/tree/main/assignment/assets/images/textures" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
+                        title="Texture Archive"><i class="fas fa-chess-board fa-4x" style="font-size: 20px;color: pink;"></i></a>
+                <a href="https://github.com/Jcorb08/Web3DApps/tree/main/assignment" data-toggle="popover" data-trigger="hover" data-placement="bottom" 
+                        title="Github Archive"><i class="fab fa-github fa-4x" style="font-size: 20px;color: gold;"></i></a>
             </div>
         </div>
     </nav>
