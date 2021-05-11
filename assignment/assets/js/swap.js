@@ -28,6 +28,7 @@ $(document).ready(function() {
 			resetActive('#navModels');
 			getMiscData();
     	getModelData('Coca Cola');
+			textureButton('#navCoke');
 		});
 	}
 
