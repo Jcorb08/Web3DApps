@@ -15,10 +15,10 @@ function stopRotate(){
   document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', spinning.toString());
 }
 function animateModel(){
-  if(document.getElementById('model_RotationTimer').getAttribute('enabled')!= true){
-    document.getElementById('model_RotationTimer').setAttribute('enabled', 'true');
+  if(document.getElementById('x3dmodel__RotationTimer').getAttribute('enabled')!= true){
+    document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', 'true');
   } else {
-    document.getElementById('model_RotationTimer').setAttribute('enabled', 'false');
+    document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', 'false');
   }
 }
 
@@ -53,32 +53,32 @@ function targetLight()
 
 function cameraFront()
 {
-	document.getElementById('model__Front').setAttribute('bind', 'true');
+	document.getElementById('x3dmodel__Front').setAttribute('bind', 'true');
 }
 
 function cameraBack()
 {
-	document.getElementById('model__Back').setAttribute('bind', 'true');
+	document.getElementById('x3dmodel__Back').setAttribute('bind', 'true');
 }
 
 function cameraLeft()
 {
-	document.getElementById('model__Left').setAttribute('bind', 'true');
+	document.getElementById('x3dmodel__Left').setAttribute('bind', 'true');
 }
 
 function cameraRight()
 {
-	document.getElementById('model__Right').setAttribute('bind', 'true');
+	document.getElementById('x3dmodel__Right').setAttribute('bind', 'true');
 }
 
 function cameraTop()
 {
-	document.getElementById('model__Top').setAttribute('bind', 'true');
+	document.getElementById('x3dmodel__Top').setAttribute('bind', 'true');
 }
 
 function cameraBottom()
 {
-	document.getElementById('model__Bottom').setAttribute('bind', 'true');
+	document.getElementById('x3dmodel__Bottom').setAttribute('bind', 'true');
 }
 
 // goes in X3D file
