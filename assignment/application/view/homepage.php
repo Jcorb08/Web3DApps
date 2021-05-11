@@ -119,9 +119,9 @@
                             <!--X3D CODE GOES HERE-->
                             <!--ADD CAMERA VIEWS FOR THE BUTTONS TO WORK SEE APENDIX 4 LAB 4-->
                             <div class="model3D">
-                            <x3d id = "model">
+                            <x3d id = "wiremodel">
                                 <scene>
-                                    <inline nameSpaceName="x3dmodel" mapDEFToID="true" url="assets/models/x3d/coca cola.x3d"> </inline>
+                                    <inline id="model" nameSpaceName="x3dmodel" mapDEFToID="true" url="assets/models/x3d/coca cola.x3d"> </inline>
                                 </scene>
                             </x3d>
                             </div>                    
