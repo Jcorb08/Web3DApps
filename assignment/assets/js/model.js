@@ -8,7 +8,7 @@
 var spinning = false;
 function spin(){
   spinning = !spinning;
-  document.getElementById('x3dmodel_RotationTimer').setAttribute('enabled', spinning.toString());
+  document.getElementById('x3dmodel__RotationTimer').setAttribute('enabled', spinning.toString());
 }
 function stopRotate(){
   spinning = false;
@@ -23,7 +23,7 @@ function animateModel(){
 }
 
 function wireframe(){
-	var e = document.getElementById("model");
+	var e = document.getElementById("wiremodel");
 	e.runtime.togglePoints(true);
 	e.runtime.togglePoints(true);
 }
